@@ -1,0 +1,73 @@
+/* ============================================
+   PRE-ORDER STYLING
+   ============================================ */
+
+/* Badge — shown next to price on PDP and in cart drawer */
+.preorder-badge {
+  display: inline-block;
+  background: var(--preorder-badge-bg, #444444);
+  color: var(--preorder-badge-color, #ffffff);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  vertical-align: middle;
+  margin-left: 8px;
+  line-height: 1.3;
+  border-radius: 2px;
+}
+
+/* Cart drawer badge — inline next to the price */
+.preorder-badge--cart {
+  margin-left: 6px;
+  font-size: 9px;
+  padding: 2px 6px;
+  vertical-align: middle;
+}
+
+/* Ship date text in inventory countdown */
+.variant__countdown--preorder {
+  display: block;
+  color: var(--text-color, #282C2E);
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+/* Hide inventory status messages when pre-order is active */
+.variant__countdown > .hidden,
+.variant__countdown--in.hidden,
+.variant__countdown--low.hidden,
+.variant__countdown--out.hidden,
+.variant__countdown--unavailable.hidden {
+  display: none !important;
+}
+
+/* Hide Shopify Inbox chat widget when cart drawer is open */
+.drawer--cart.is-open ~ #shopify-chat,
+.drawer--cart.is-open ~ [id^="ShopifyChat"],
+body:has(.drawer--cart.is-open) #shopify-chat,
+body:has(.drawer--cart.is-open) [id^="ShopifyChat"] {
+  display: none !important;
+}
+
+/* ============================================
+   PERFORMANCE — Navigation DOM weight
+   ============================================ */
+
+/*
+  content-visibility: auto defers rendering of the
+  hamburger drawer until it's about to become visible.
+  This avoids layout/paint cost for all the mobile nav
+  panels, mega-menu images, and nested sub-menus on
+  initial page load — significantly reducing TTI.
+*/
+.drawer--header .drawer__inner {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 100vh;
+}
+
+/* Once the drawer is open, render normally */
+.drawer--header.is-open .drawer__inner {
+  content-visibility: visible;
+}

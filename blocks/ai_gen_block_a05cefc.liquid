@@ -1,0 +1,457 @@
+{% doc %}
+  @prompt
+    a banner that informs customers 1 year warranty, trusted by over 24,000 customers, certified amber
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-trust-banner-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    overflow: hidden;
+  }
+
+  .ai-trust-banner__container-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: {{ block.settings.item_spacing }}px;
+    flex-wrap: wrap;
+  }
+
+  .ai-trust-banner__item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.icon_text_gap }}px;
+  }
+
+  .ai-trust-banner__icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    flex-shrink: 0;
+    color: {{ block.settings.icon_color }};
+  }
+
+  .ai-trust-banner__icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-trust-banner__text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    font-weight: {{ block.settings.text_weight }};
+    margin: 0;
+  }
+
+  .ai-trust-banner__divider-{{ ai_gen_id }} {
+    width: 1px;
+    height: {{ block.settings.divider_height }}px;
+    background-color: {{ block.settings.divider_color }};
+  }
+
+  /* Mobile: carousel mode — show one item at a time with crossfade */
+  @media screen and (max-width: 749px) {
+    .ai-trust-banner__container-{{ ai_gen_id }} {
+      position: relative;
+      min-height: 24px;
+      justify-content: center;
+    }
+
+    .ai-trust-banner__item-{{ ai_gen_id }} {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .ai-trust-banner__item-{{ ai_gen_id }}.is-active {
+      opacity: 1;
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      pointer-events: auto;
+    }
+
+    .ai-trust-banner__divider-{{ ai_gen_id }} {
+      display: none;
+    }
+
+    .ai-trust-banner__text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_text_size }}px;
+    }
+
+    .ai-trust-banner__icon-{{ ai_gen_id }} {
+      width: {{ block.settings.mobile_icon_size }}px;
+      height: {{ block.settings.mobile_icon_size }}px;
+    }
+  }
+{% endstyle %}
+
+<trust-banner-{{ ai_gen_id }} class="ai-trust-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-trust-banner__container-{{ ai_gen_id }}" data-trust-carousel>
+    {% if block.settings.show_warranty %}
+      <div class="ai-trust-banner__item-{{ ai_gen_id }}" data-trust-item>
+        <div class="ai-trust-banner__icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ block.settings.icon_weight }}" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+        </div>
+        <p class="ai-trust-banner__text-{{ ai_gen_id }}">{{ block.settings.warranty_text }}</p>
+      </div>
+
+      {% if block.settings.show_dividers and block.settings.show_customers %}
+        <div class="ai-trust-banner__divider-{{ ai_gen_id }}"></div>
+      {% endif %}
+    {% endif %}
+
+    {% if block.settings.show_customers %}
+      <div class="ai-trust-banner__item-{{ ai_gen_id }}" data-trust-item>
+        <div class="ai-trust-banner__icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ block.settings.icon_weight }}" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <p class="ai-trust-banner__text-{{ ai_gen_id }}">{{ block.settings.customers_text }}</p>
+      </div>
+
+      {% if block.settings.show_dividers and block.settings.show_hypoallergenic %}
+        <div class="ai-trust-banner__divider-{{ ai_gen_id }}"></div>
+      {% endif %}
+    {% endif %}
+
+    {% if block.settings.show_hypoallergenic %}
+      <div class="ai-trust-banner__item-{{ ai_gen_id }}" data-trust-item>
+        <div class="ai-trust-banner__icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{{ block.settings.icon_weight }}" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <p class="ai-trust-banner__text-{{ ai_gen_id }}">{{ block.settings.hypoallergenic_text }}</p>
+      </div>
+    {% endif %}
+  </div>
+</trust-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TrustBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.interval = null;
+        this.mql = window.matchMedia('(max-width: 749px)');
+      }
+
+      connectedCallback() {
+        this.items = this.querySelectorAll('[data-trust-item]');
+        if (this.items.length < 2) return;
+
+        this.handleBreakpoint = this.handleBreakpoint.bind(this);
+        this.mql.addEventListener('change', this.handleBreakpoint);
+        this.handleBreakpoint();
+      }
+
+      disconnectedCallback() {
+        this.stopCarousel();
+        this.mql.removeEventListener('change', this.handleBreakpoint);
+      }
+
+      handleBreakpoint() {
+        if (this.mql.matches) {
+          this.startCarousel();
+        } else {
+          this.stopCarousel();
+          this.items.forEach(function(item) { item.classList.remove('is-active'); });
+        }
+      }
+
+      startCarousel() {
+        this.currentIndex = 0;
+        this.showItem(this.currentIndex);
+        this.interval = setInterval(function() {
+          this.currentIndex = (this.currentIndex + 1) % this.items.length;
+          this.showItem(this.currentIndex);
+        }.bind(this), 3000);
+      }
+
+      stopCarousel() {
+        if (this.interval) {
+          clearInterval(this.interval);
+          this.interval = null;
+        }
+      }
+
+      showItem(index) {
+        this.items.forEach(function(item, i) {
+          if (i === index) {
+            item.classList.add('is-active');
+          } else {
+            item.classList.remove('is-active');
+          }
+        });
+      }
+    }
+
+    customElements.define('trust-banner-{{ ai_gen_id }}', TrustBanner{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Trust banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_warranty",
+      "label": "Show warranty",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "warranty_text",
+      "label": "Warranty text",
+      "default": "1 Year Warranty"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_customers",
+      "label": "Show customers",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "customers_text",
+      "label": "Customers text",
+      "default": "Trusted by Over 24,000 Customers"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hypoallergenic",
+      "label": "Show hypoallergenic",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "hypoallergenic_text",
+      "label": "Hypoallergenic text",
+      "default": "Certified Amber"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Vertical padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontal padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "label": "Space between items",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_item_spacing",
+      "label": "Mobile space between items",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "icon_text_gap",
+      "label": "Icon to text spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Dividers"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dividers",
+      "label": "Show dividers",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "divider_height",
+      "label": "Divider height",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#d6aa58"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f2f2f2"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#212121"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon",
+      "default": "#d6aa58"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_size",
+      "label": "Mobile text size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Text weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "500"
+    },
+    {
+      "type": "header",
+      "content": "Icons"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_icon_size",
+      "label": "Mobile icon size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "icon_weight",
+      "label": "Icon stroke weight",
+      "min": 0.5,
+      "max": 3.0,
+      "step": 0.1,
+      "default": 1.5
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust banner"
+    }
+  ]
+}
+{% endschema %}

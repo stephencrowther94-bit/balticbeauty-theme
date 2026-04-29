@@ -1,0 +1,406 @@
+{%- comment -%}
+  Cart recommendation widget
+  Renders a single selected product inside the cart drawer, above the subtotal,
+  with a customisable heading and body copy. Configured under
+  Theme settings > Cart > Cart recommendation widget.
+
+  The widget hides itself when the selected product is in the cart and
+  re-shows when it's removed. Toggling is handled client-side by listening
+  to the theme's cart change events and confirming against /cart.js.
+{%- endcomment -%}
+
+{%- liquid
+  assign rec_product = settings.cart_recommendation_product
+  assign rec_heading = settings.cart_recommendation_heading
+  assign rec_body = settings.cart_recommendation_body
+
+  assign show_rec_widget = false
+  if rec_product != blank
+    assign show_rec_widget = true
+  endif
+-%}
+
+{%- if show_rec_widget -%}
+  {%- liquid
+    assign rec_variant = rec_product.selected_or_first_available_variant
+    assign rec_variant_image = rec_variant.featured_media | default: rec_product.featured_media.preview_image
+    assign rec_unique = 'cart-rec-' | append: rec_product.id
+    assign rec_form_id = 'CartRecForm--' | append: rec_unique
+
+    assign rec_in_cart = false
+    assign rec_has_full_price_item = false
+    assign rec_has_non_free_item = false
+    for item in cart.items
+      if item.product_id == rec_product.id
+        assign rec_in_cart = true
+      else
+        assign rec_has_non_free_item = true
+        if item.variant.compare_at_price == null or item.variant.compare_at_price <= item.variant.price
+          assign rec_has_full_price_item = true
+        endif
+      endif
+    endfor
+
+    assign rec_is_sale_only = false
+    if rec_has_non_free_item and rec_has_full_price_item == false
+      assign rec_is_sale_only = true
+    endif
+
+    assign rec_should_hide = false
+    if rec_in_cart or rec_is_sale_only
+      assign rec_should_hide = true
+    endif
+  -%}
+
+  <quick-add-product
+    class="cart-rec{% if rec_should_hide %} is-hidden{% endif %}"
+    data-cart-rec
+    data-cart-rec-product-id="{{ rec_product.id }}"
+  >
+    <div class="cart-rec__inner" data-quick-add-holder="{{ rec_product.id }}">
+      <a href="{{ rec_product.url }}" class="cart-rec__image" aria-label="{{ rec_product.title | strip_html | escape }}">
+        {%- render 'image',
+          image: rec_variant_image,
+          widths: '120, 180, 240, 300',
+          width: '120',
+          sizes: '80px',
+          cover: true
+        -%}
+      </a>
+
+      <div class="cart-rec__body">
+        {%- if rec_heading != blank -%}
+          <p class="cart-rec__heading">{{ rec_heading | escape }}</p>
+        {%- endif -%}
+
+        {%- if rec_body != blank -%}
+          <p class="cart-rec__copy">{{ rec_body | escape | newline_to_br }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="cart-rec__action">
+        <div data-cart-errors-container class="cart-rec__errors"></div>
+
+        {%- if rec_product.variants.size == 1 -%}
+          {%- form 'product', rec_product, id: rec_form_id -%}
+            <input type="hidden" name="id" value="{{ rec_variant.id }}">
+            <button
+              class="cart-rec__btn"
+              type="submit"
+              name="add"
+              data-quick-add-btn
+              data-add-to-cart
+              aria-label="{{ 'products.general.upsell_add_to_cart' | t }}: {{ rec_product.title | strip_html | escape }}"
+            >
+              <span class="btn__text">{{ 'products.general.upsell_add_to_cart' | t }}</span>
+              <span class="btn__loader" aria-hidden="true">
+                <svg height="18" width="18" class="svg-loader">
+                  <circle r="7" cx="9" cy="9" />
+                  <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+                </svg>
+              </span>
+              <span class="btn__added" aria-hidden="true">&nbsp;</span>
+            </button>
+          {%- endform -%}
+        {%- else -%}
+          <button
+            class="cart-rec__btn"
+            type="button"
+            data-quick-add-btn
+            data-quick-add-modal-handle="{{ rec_product.handle }}"
+            aria-label="{{ 'products.general.upsell_add_to_cart' | t }}: {{ rec_product.title | strip_html | escape }}"
+          >
+            <span class="btn__text">{{ 'products.general.upsell_add_to_cart' | t }}</span>
+            <span class="btn__loader" aria-hidden="true">
+              <svg height="18" width="18" class="svg-loader">
+                <circle r="7" cx="9" cy="9" />
+                <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+              </svg>
+            </span>
+            <span class="btn__added" aria-hidden="true">&nbsp;</span>
+          </button>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- unless rec_product.has_only_default_variant -%}
+      {%- render 'product-quick-add-modal-template', product_id: rec_product.id, unique: rec_unique -%}
+    {%- endunless -%}
+  </quick-add-product>
+
+  <script>
+    (function () {
+      if (window.__cartRecWidgetInit) return;
+      window.__cartRecWidgetInit = true;
+
+      var MIN_QUALIFYING_SUBTOTAL = 1500; // pence — £15.00 (cart must be >= this, excluding the free product)
+      var TOAST_MESSAGE = 'Please add a product to qualify for the free product.';
+      var DEBUG = true; // flip to false to silence logs
+      var enforcing = false;
+
+      function log() {
+        if (!DEBUG) return;
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift('[cart-rec]');
+        console.log.apply(console, args);
+      }
+
+      function getWidgetProductIds() {
+        var widgets = document.querySelectorAll('[data-cart-rec]');
+        var ids = [];
+        widgets.forEach(function (w) {
+          var pid = w.getAttribute('data-cart-rec-product-id');
+          if (pid) ids.push(String(pid));
+        });
+        return ids;
+      }
+
+      function showToast(msg) {
+        var existing = document.querySelector('[data-cart-rec-toast]');
+        if (existing) existing.remove();
+
+        var el = document.createElement('div');
+        el.setAttribute('data-cart-rec-toast', '');
+        el.className = 'cart-rec-toast';
+        el.setAttribute('role', 'status');
+        el.setAttribute('aria-live', 'polite');
+        el.textContent = msg;
+        document.body.appendChild(el);
+
+        void el.offsetWidth;
+        el.classList.add('is-visible');
+
+        setTimeout(function () {
+          el.classList.remove('is-visible');
+          setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 400);
+        }, 3500);
+      }
+
+      function removeLineByKey(lineKey) {
+        // Remove a cart line by its Shopify line key. Using `id` (the line key)
+        // instead of `line` (1-based index) makes this robust against DOM
+        // staleness — Shopify resolves the key server-side regardless of how
+        // many items are in the cart or what order the DOM shows them in.
+        log('removing line by key', lineKey);
+        return fetch('/cart/change.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({ id: lineKey, quantity: 0 })
+        }).then(function (r) { return r.json(); });
+      }
+
+      function rerenderCartAndNotify(latestCart) {
+        // Defer to the theme's own cart controller so all of its internal state
+        // (empty/non-empty classes, totals, count badge, rebound remove
+        // handlers, dispatched events) updates atomically. Our previous
+        // approach of splicing innerHTML directly left the controller's state
+        // out of sync, which manifested as the drawer rendering blank.
+        if (window.cart && typeof window.cart.getCart === 'function') {
+          try {
+            window.cart.getCart();
+            return Promise.resolve();
+          } catch (err) {
+            log('window.cart.getCart() threw, falling back to manual rerender', err);
+          }
+        }
+
+        // Fallback: manual splice + dispatch. Used only on pages where
+        // window.cart isn't initialised (e.g. cart page itself in some themes).
+        return fetch('/?section_id=api-cart-items', { cache: 'no-store' })
+          .then(function (r) { return r.text(); })
+          .then(function (html) {
+            var tmp = document.createElement('div');
+            tmp.innerHTML = html;
+            var src = tmp.querySelector('[data-api-content]');
+            var itemsSrc = src && src.querySelector('[data-api-line-items]');
+            var upsellSrc = src && src.querySelector('[data-api-upsell-items]');
+            var priceSrc = src && src.querySelector('[data-api-cart-price]');
+
+            var itemsDest = document.querySelector('[data-items-holder]');
+            var upsellDest = document.querySelector('[data-upsell-products]');
+            var priceDest = document.querySelector('[data-cart-price-holder]');
+
+            if (itemsSrc && itemsDest) itemsDest.innerHTML = itemsSrc.innerHTML;
+            if (upsellSrc && upsellDest) upsellDest.innerHTML = upsellSrc.innerHTML;
+            if (priceSrc && priceDest) priceDest.innerHTML = priceSrc.innerHTML;
+
+            document.dispatchEvent(new CustomEvent('theme:cart:change', {
+              bubbles: true,
+              detail: { cartCount: (latestCart && latestCart.item_count) || 0 }
+            }));
+          })
+          .catch(function (err) { log('re-render failed', err); });
+      }
+
+      function syncAndEnforce(evt) {
+        log('syncAndEnforce triggered by', evt && evt.type ? evt.type : 'direct-call');
+
+        var widgets = document.querySelectorAll('[data-cart-rec]');
+        if (!widgets.length) { log('no widgets on page, bailing'); return Promise.resolve(); }
+        if (enforcing) { log('already enforcing, bailing'); return Promise.resolve(); }
+
+        // Claim the enforcement lock SYNCHRONOUSLY before any async work so that
+        // concurrent events (theme:cart:change + theme:product:added can fire
+        // back-to-back from the theme's build()) can't both pass this check and
+        // end up running the removal logic twice, which in the past caused a
+        // second stale-DOM remove to hit the wrong cart line.
+        enforcing = true;
+        var heldLongLock = false;
+
+        function releaseSoon() {
+          // Long release: outlasts a getCart() fetch + build() event burst so
+          // we don't re-enter on our own cart-change dispatch.
+          setTimeout(function () {
+            enforcing = false;
+            log('enforcement lock released (long)');
+          }, 1500);
+        }
+        function releaseNow() {
+          enforcing = false;
+          log('enforcement lock released (immediate)');
+        }
+
+        return fetch('/cart.js', { headers: { 'Accept': 'application/json' }, cache: 'no-store' })
+          .then(function (r) { return r.json(); })
+          .then(function (cart) {
+            log('cart snapshot', { item_count: cart.item_count, items_subtotal_price: cart.items_subtotal_price, items: cart.items.map(function(i){return {pid: i.product_id, qty: i.quantity, line_total: i.final_line_price};}) });
+
+            var items = cart.items || [];
+            var freeProductIds = getWidgetProductIds();
+            log('widget product ids', freeProductIds);
+
+            // Build a map of product_id -> isSale by reading DOM data attributes
+            // populated by cart-line-items.liquid. /cart.js does NOT return
+            // compare_at_price, so we can't rely on the API response for this.
+            var saleByProductId = {};
+            document.querySelectorAll('[data-item-product-id]').forEach(function (el) {
+              var pid = String(el.getAttribute('data-item-product-id') || '');
+              var priceAttr = el.getAttribute('data-item-price');
+              var compareAttr = el.getAttribute('data-item-compare-at-price');
+              var price = priceAttr ? parseInt(priceAttr, 10) : null;
+              var compare = compareAttr ? parseInt(compareAttr, 10) : null;
+              var isSale = compare != null && price != null && compare > price;
+              // If the same product appears multiple times, treat as sale if any line is on sale
+              if (!saleByProductId[pid]) saleByProductId[pid] = isSale;
+              else saleByProductId[pid] = saleByProductId[pid] || isSale;
+            });
+            log('sale classification from DOM', saleByProductId);
+
+            var freeLines = [];
+            var freeLinesTotal = 0;
+            var nonFreeItems = [];
+            items.forEach(function (item, idx) {
+              var pidStr = String(item.product_id);
+              var isFree = freeProductIds.indexOf(pidStr) !== -1;
+              if (isFree) {
+                freeLines.push({ index: idx + 1, productId: item.product_id, key: item.key, lineTotal: item.final_line_price });
+                freeLinesTotal += item.final_line_price;
+              } else {
+                var isSale = !!saleByProductId[pidStr];
+                nonFreeItems.push({ pid: item.product_id, qty: item.quantity, isSale: isSale, lineTotal: item.final_line_price });
+              }
+            });
+
+            var hasFullPriceItem = nonFreeItems.some(function (i) { return !i.isSale; });
+            var hasAnyNonFreeItem = nonFreeItems.length > 0;
+            var isSaleOnly = hasAnyNonFreeItem && !hasFullPriceItem;
+
+            log('free lines found', freeLines, 'freeLinesTotal', freeLinesTotal);
+            log('non-free items', nonFreeItems, 'hasFullPriceItem', hasFullPriceItem, 'isSaleOnly', isSaleOnly);
+
+            // Widget visibility:
+            //  - hide if free product is already in cart (existing rule)
+            //  - hide if cart is sale-only (new rule)
+            //  - otherwise show
+            var presentIds = items.map(function (i) { return String(i.product_id); });
+            widgets.forEach(function (w) {
+              var pid = w.getAttribute('data-cart-rec-product-id');
+              if (!pid) return;
+              var alreadyInCart = presentIds.indexOf(String(pid)) !== -1;
+              if (alreadyInCart || isSaleOnly) {
+                w.classList.add('is-hidden');
+              } else {
+                w.classList.remove('is-hidden');
+              }
+            });
+
+            if (freeLines.length === 0) {
+              log('no free product lines in cart, nothing to enforce');
+              return;
+            }
+
+            var subtotalExcludingFree = (cart.items_subtotal_price || 0) - freeLinesTotal;
+            var qualifiesBySubtotal = subtotalExcludingFree >= MIN_QUALIFYING_SUBTOTAL;
+            var qualifiesBySaleMix = hasFullPriceItem; // must have at least one full-price item alongside
+            log('subtotal excluding free', subtotalExcludingFree, 'threshold', MIN_QUALIFYING_SUBTOTAL, 'qualifiesBySubtotal?', qualifiesBySubtotal, 'qualifiesBySaleMix?', qualifiesBySaleMix);
+
+            if (qualifiesBySubtotal && qualifiesBySaleMix) return;
+
+            // Remove the free line(s) by Shopify line key via /cart/change.js.
+            //
+            // We deliberately do NOT click the theme's remove link, because the
+            // theme's updateCart() translates the clicked key back into a 1-based
+            // line index by reading data-item-index from the DOM. That works fine
+            // on a direct user click, but when this widget reacts to a cart event
+            // the DOM can still be showing the pre-change cart while Shopify's
+            // cart has already advanced, and the stale index would hit the wrong
+            // line — which is what was causing an unrelated (e.g. sale) item to
+            // be removed alongside the intended free-product line.
+            //
+            // Using { id: lineKey, quantity: 0 } lets Shopify resolve the key
+            // server-side and sidesteps the DOM-staleness problem entirely.
+            // Mark that we're actually going to mutate the cart, so the
+            // outer .then() knows to use the long release.
+            heldLongLock = true;
+            log('removing free lines by key', freeLines.map(function (l) { return l.key; }));
+            showToast(TOAST_MESSAGE);
+
+            var chain = Promise.resolve(null);
+            freeLines.forEach(function (line) {
+              chain = chain.then(function () { return removeLineByKey(line.key); });
+            });
+
+            return chain
+              .then(function (finalCart) {
+                log('free-line removal complete', finalCart && { item_count: finalCart.item_count });
+                return rerenderCartAndNotify(finalCart);
+              })
+              .catch(function (err) { log('enforcement error', err); });
+          })
+          .catch(function (err) { log('syncAndEnforce fetch error', err); })
+          .then(function () {
+            // Long release if we triggered a cart mutation + theme rerender,
+            // immediate release otherwise so subsequent events aren't blocked.
+            if (heldLongLock) releaseSoon();
+            else releaseNow();
+          });
+      }
+
+      document.addEventListener('theme:product:added', syncAndEnforce);
+      document.addEventListener('theme:cart:change', syncAndEnforce);
+
+      // Safety net for the rare case where a cart-mutating click happens but
+      // the theme doesn't end up dispatching theme:cart:change (e.g. request
+      // error). The enforcing lock will swallow this call if the theme did
+      // dispatch events and a run has already started.
+      document.addEventListener('click', function (e) {
+        var target = e.target && e.target.closest && e.target.closest('[data-add-to-cart], [data-quick-add-btn], [data-item-remove], [data-qty-adjust], [data-cart-remove]');
+        if (!target) return;
+        log('saw click on cart control — scheduling safety-net sync');
+        setTimeout(syncAndEnforce, 2500);
+      });
+
+      document.addEventListener('theme:cart-drawer:open', syncAndEnforce);
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', syncAndEnforce);
+      } else {
+        syncAndEnforce();
+      }
+
+      // Expose for manual testing in console
+      window.__cartRecSync = syncAndEnforce;
+      log('widget init complete');
+    })();
+  </script>
+{%- endif -%}

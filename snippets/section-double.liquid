@@ -1,0 +1,242 @@
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.color
+  assign animation_anchor = '#double-section-' | append: section.id
+  assign animation_order = 0
+  assign enable_slider = enable_slider | default: false
+
+  if section.blocks.size < 2
+    assign enable_slider = false
+  endif
+
+  capture style
+    echo '--PT: ' | append: section.settings.padding_top | append: 'px;'
+    echo '--PB: ' | append: section.settings.padding_bottom | append: 'px;'
+
+    unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank
+      echo '--bg: ' | append: bg_color | append: ';'
+    endunless
+
+    unless text_color == 'rgba(0,0,0,0)' or text_color == blank
+      echo '--text: ' | append: text_color | append: ';'
+    endunless
+  endcapture
+
+  assign image_1 = section.settings.image_1
+  assign image_2 = section.settings.image_2
+  assign image_width = section.settings.image_width
+  capture sizes
+    if image_1 and image_2
+      if image_width == 'three-quarters'
+        echo '(min-width: 768px) 37.5vw, 100vw'
+      else
+        echo '(min-width: 768px) 25vw, 100vw'
+      endif
+    else
+      if image_width == 'three-quarters'
+        echo '(min-width: 768px) 75vw, 100vw'
+      else
+        echo '(min-width: 768px) 50vw, 100vw'
+      endif
+    endif
+  endcapture
+
+  assign figure_width_class = 'section-double__figure--one-half'
+  if image_width == 'three-quarters'
+    assign figure_width_class = 'section-double__figure--three-quarters'
+  endif
+
+  capture alignment
+    if section.settings.text_alignment == 'text-left'
+      echo ' align--middle-left'
+    else
+      echo ' align--middle-center'
+    endif
+  endcapture
+-%}
+
+<section class="section-double section-double--image{% if enable_slider %} section-double--slider{% endif %} section-padding {{ section.settings.layout }}"
+  id="double-section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="double"
+  style="{{ style }}">
+  <div class="{{ section.settings.width }}">
+    {%- if section.blocks.size > 0 -%}
+      <div class="section-double__body {{ section.settings.height }} {{ section.settings.mobile_height }}">
+        <figure class="section-double__figure {{ figure_width_class }}"
+          {% if image_1 != blank and image_2 != blank %}
+            data-slider
+            data-slider-fullwidth
+            data-options='{"watchCSS": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+          {% endif %}>
+          {%- if image_1 != blank -%}
+            <div class="section-double__split-image"
+              data-slide="1"
+              data-slide-index="1">
+              {%- render 'image-hero' image: image_1, sizes: sizes, modifier: 'section-double__image', desktop_height: section.settings.height, mobile_height: section.settings.mobile_height -%}
+            </div>
+          {%- endif -%}
+
+          {%- if image_2 != blank or image_1 == blank -%}
+            <div class="section-double__split-image"
+              data-slide="2"
+              data-slide-index="2">
+              {%- render 'image-hero' image: image_2, sizes: sizes, modifier: 'section-double__image', desktop_height: section.settings.height, mobile_height: section.settings.mobile_height -%}
+            </div>
+          {%- endif -%}
+        </figure>
+
+        <div class="section-double__aside">
+          <div class="section-double__content hero__content__wrapper{{ alignment }}">
+            <div class="hero__content{% if enable_slider %} grid--mobile-slider{% endif %}"
+              {% if enable_slider %}
+                data-slider="{{ section.id }}"
+                data-slider-desktop
+                data-dots="{{ settings.dots_style }}"
+                data-options='{"watchCSS": true, "wrapAround": true, "pageDots": true, "prevNextButtons": false, "autoPlay": 4000, "pauseAutoPlayOnHover": false}'
+              {% endif %}>
+
+              {%- for block in section.blocks -%}
+
+                {%- if enable_slider -%}
+                  <div
+                    class="hero__slide grid-item"
+                    data-slide="{{ block.id }}"
+                    data-slide-index="{{ forloop.index0 }}"
+                    {{ block.shopify_attributes }}
+                  >
+                {%- endif -%}
+
+                {%- case block.type -%}
+                  {%- when 'heading' -%}
+                    {%- if block.settings.title != blank -%}
+                      {%- assign animation_order = animation_order | plus: 1 -%}
+                      {%- assign font_size_class = block.settings.text_size | prepend: 'heading-size-' -%}
+                      <h2 class="hero__title {{ font_size_class }}"
+                        data-aos="hero"
+                        data-aos-anchor="{{ animation_anchor }}"
+                        data-aos-order="{{ animation_order }}"
+                        {{ block.shopify_attributes }}>
+                        {{ block.settings.title }}
+                      </h2>
+                    {%- endif -%}
+
+                  {%- when 'text' -%}
+                    {%- if block.settings.text != blank -%}
+                      {%- assign animation_order = animation_order | plus: 1 -%}
+                      {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                      <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }}"
+                        data-aos="hero"
+                        data-aos-anchor="{{ animation_anchor }}"
+                        data-aos-order="{{ animation_order }}"
+                        {{ block.shopify_attributes }}>
+                        {{ block.settings.text }}
+                      </div>
+                    {%- endif -%}
+
+                  {%- when 'buttons' -%}
+                    {%- if block.settings.button_text != blank -%}
+                      {%- liquid
+                        assign prev_index = forloop.index0 | minus: 1
+                        assign next_index = forloop.index0 | plus: 1
+                        assign prev_block = section.blocks[prev_index]
+                        assign next_block = section.blocks[next_index]
+                        assign animation_order = animation_order | plus: 1
+                        assign first_button_of_group = false
+                        assign last_button_of_group = false
+                        if next_block.type == 'buttons' and forloop.index0 == 0 or prev_block.type != 'buttons' and next_index != section.blocks.size and next_block.type == 'buttons'
+                          assign first_button_of_group = true
+                        endif
+
+                        if prev_block.type == 'buttons' and next_block.type != 'buttons' and prev_index != -1 or forloop.index == section.blocks.size and prev_block.type == 'buttons'
+                          assign last_button_of_group = true
+                        endif
+
+                        assign button_style = block.settings.button_style
+                        if button_style == 'btn--text' and block.settings.show_arrow
+                          assign button_style = button_style | append: ' btn--text-no-underline'
+                        endif
+                      -%}
+
+                      {%- if first_button_of_group -%}
+                        <div class="hero__button-group">
+                      {%- endif -%}
+
+                      <div class="hero__button"
+                        data-aos="hero"
+                        data-aos-anchor="{{ animation_anchor }}"
+                        data-aos-order="{{ animation_order }}"
+                        {{ block.shopify_attributes }}>
+                        <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
+                          <span>{{ block.settings.button_text }}</span>
+
+                          {%- if block.settings.show_arrow -%}
+                            {%- render 'icon-arrow-right' -%}
+                          {%- endif -%}
+                        </a>
+                      </div>
+
+                    {%- if last_button_of_group -%}
+                      </div>
+                    {%- endif -%}
+                  {%- endif -%}
+
+                {%- when 'divider' -%}
+                  {%- assign animation_order = animation_order | plus: 1 -%}
+                  {%- capture attributes -%}
+                    data-aos="hero"
+                    data-aos-anchor="{{ animation_anchor }}"
+                    data-aos-order="{{ animation_order }}"
+                  {%- endcapture -%}
+
+                  {%- render 'divider' block: block, attributes: attributes -%}
+
+                {%- when 'text-slide' -%}
+                  {%- if block.settings.title != blank -%}
+                    {%- assign font_size_class = block.settings.heading_size | prepend: 'heading-size-' -%}
+                    <h2 class="hero__title {{ font_size_class }}">
+                      {{ block.settings.title }}
+                    </h2>
+                  {%- endif -%}
+
+                  {%- if block.settings.text != blank -%}
+                    {%- assign font_size_class = block.settings.text_size | prepend: 'body-size-' -%}
+                    <div class="hero__rte {{ font_size_class }} {{ block.settings.text_style }}">
+                      {{ block.settings.text }}
+                    </div>
+                  {%- endif -%}
+
+                  {%- if block.settings.button_text != blank -%}
+                    {%- liquid
+                      assign button_style = block.settings.button_style
+                      if button_style == 'btn--text' and block.settings.show_arrow
+                        assign button_style = button_style | append: ' btn--text-no-underline'
+                      endif
+                    -%}
+
+                    <div class="hero__button">
+                      <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
+                        <span>{{ block.settings.button_text }}</span>
+
+                        {%- if block.settings.show_arrow -%}
+                          {%- render 'icon-arrow-right' -%}
+                        {%- endif -%}
+                      </a>
+                    </div>
+                  {%- endif -%}
+
+                {%- endcase -%}
+
+                {%- if enable_slider -%}
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- else -%}
+      {%- render 'no-blocks' -%}
+    {%- endif -%}
+  </div>
+</section>

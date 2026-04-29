@@ -1,0 +1,10 @@
+{% comment %}Please don't edit this file -- it may be replaced automatically at any moment!{% endcomment %}
+{%- if template.name == 'cart' -%}
+  <script defer src="https://inspon-app.com/textfield/backend/js/cart_script.js"></script>
+{%- endif -%}
+
+{%- if template.name == 'product' -%}
+<div id="tb_data_div" style="display: none !important;" data-tb-variants-json="{{ product.variants | json | escape }}" data-tb-prodid-json="{{ product.id }}"  data-tb-prodtitle-json="{{ product.title | json | escape }}" data-tb-options-json="{{ product.options_with_values | json | escape }}" data-tb-product-data-json="{{ product | json | escape }}" data-tb-collection-data-json="{{ product.collections | json | escape }}"></div>
+{%- endif -%}
+
+<script defer src='https://inspon-app.com/textfield/backend/js/page_script.js'></script>

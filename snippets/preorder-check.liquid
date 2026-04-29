@@ -1,0 +1,26 @@
+{% comment %}
+  Preorder status check — documentation snippet
+
+  Pre-order is activated solely by the custom.preorder_ship_date metafield (type: date).
+  If a future date is set → product is pre-order.
+  If no date, or date has passed → product is normal / in-stock.
+
+  No tags required. No theme.preorder metafield required.
+
+  CANONICAL PREORDER CHECK LOGIC (copy this block wherever needed):
+
+    assign is_preorder = false
+    if settings.preorder_enable
+      assign preorder_ship_date_val = product.metafields.custom.preorder_ship_date.value
+      if preorder_ship_date_val != blank
+        assign preorder_date_int = preorder_ship_date_val | date: '%Y%m%d' | plus: 0
+        assign today_int = 'now' | date: '%Y%m%d' | plus: 0
+        if today_int < preorder_date_int
+          assign is_preorder = true
+        endif
+      endif
+    endif
+
+  For cart line items, replace `product` with `line_item.product`.
+  Add `and current_variant.available` to the outer if when on product pages.
+{% endcomment %}

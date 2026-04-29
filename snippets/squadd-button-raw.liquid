@@ -1,0 +1,18 @@
+{% comment %}
+<!-- DO NOT EDIT!! - Auto generated file -->
+{% endcomment %}
+{% raw %}
+
+<div class="Squadded recently-viewed"
+    data-item-id="${id}"
+    data-title="${title}"
+    data-price-string="{{html v=Shopify.formatMoney(variants[0].price, window.money_format), $(v).text() || v}}"
+    {{if variants[0].compare_at_price > variants[0].price}}
+    data-orig-price-string="{{html v=Shopify.formatMoney(variants[0].compare_at_price, window.money_format), $(v).text() || v}}"
+    {{/if}}
+    data-img="${featured_image}"
+    data-url="{% endraw %}{{ shop.url }}{% raw %}${url}"
+    style="display:none;"
+><button title="Add to Squad Wishlist"></button></div>
+
+{% endraw %}

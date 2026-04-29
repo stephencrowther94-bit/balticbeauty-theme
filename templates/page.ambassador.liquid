@@ -1,0 +1,21 @@
+<html>
+                  <body>
+                    {{page.content}}
+                    <div id="Squadded-SDK"></div>
+                    <script src="https://static.squadded.co/sdk/js/main.js"></script>
+                    <script src="https://static.squadded.co/loader/squad-widget-loader.min.js" id="squad-js" data-merchant-id="baltic-beauty_myshopify_com"></script>
+                    <script>
+                      const params= new URLSearchParams(window.location.search)
+                      sessionStorage.setItem('squadded-interacted', true)
+                      const userId= params.get('userId') || (params.values().next().value === '' ? params.keys().next().value : null)
+                      window.SquaddedProductPage.install({
+                        rootElt: document.getElementById('Squadded-SDK'),
+                        apiPrefix: 'https://api.squadded.co',
+                        type: 'context-user',
+                        merchantId: 'baltic-beauty_myshopify_com',
+                        userId,
+                        onlyAdminExpert: true,
+                      })
+                    </script>
+                  </body>
+                </html>

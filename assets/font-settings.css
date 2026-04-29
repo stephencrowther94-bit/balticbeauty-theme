@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Fraunces;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/fraunces/fraunces_n4.8e6986daad4907c36a536fb8d55aaf5318c974ca.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/fraunces/fraunces_n4.879060358fafcf2c4c4b6df76c608dc301ced93b.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/poppins/poppins_n4.214741a72ff2596839fc9760ee7a770386cf16ca.woff") format("woff");
+}
+
+
+
+  @font-face {
+  font-family: Fraunces;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/fraunces/fraunces_n5.13c1a0a22f418d74c2d7163ece3b2c328a4bc72e.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/fraunces/fraunces_n5.effb85677d30db3cf26ca07b6f42cc7bc4b8a3f8.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_n5.6fc0ed1feb3fc393c40619f180fc49c4d0aae0db.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_n5.2c84830b46099cbcc1095f30e0957b88b914e50a.woff") format("woff");
+}
+
+
+
+
+
+
+
+  @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_i4.6e408730afac1484cf297c30b0e67c86d17fc586.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_i4.c9b6dcbfa43622b39a5990002775a8381942ae38.woff") format("woff");
+}
+
+
+
+
+  @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_i5.4aec82a63f514f7698d355e559a100d24fff7f85.woff2") format("woff2"),
+       url("//balticbeauty.co.uk/cdn/fonts/nunito_sans/nunitosans_i5.cdc884b66aa1fc89a9fc4820a600e6cdd9d97845.woff") format("woff");
+}
+

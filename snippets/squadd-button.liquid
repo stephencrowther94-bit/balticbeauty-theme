@@ -1,0 +1,19 @@
+{% comment %}
+<!-- DO NOT EDIT!! - Auto generated file -->
+{% endcomment %}
+{%- if product -%}
+<span class="Squadded sqd-{{ request.page_type | handle }}"
+    data-item-id="{{product.id}}"
+    data-title="{{product.title}}"
+    data-price-string="{{product.price | money | strip_html}}"
+    {% if product.compare_at_price > product.price %}
+    data-orig-price-string="{{product.compare_at_price | money | strip_html}}"
+    {% endif %}
+    data-img="https:{{ product.featured_image | img_url: '340x425' }}"
+    data-url="{{ shop.url }}{{product.url}}"
+    style="display:none;"
+    {%- if fallback -%}
+    data-fallback
+    {%- endif -%}
+><button title="Add to Squad Wishlist"></button></span>
+{%- endif -%}
