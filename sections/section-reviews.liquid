@@ -98,7 +98,7 @@
 
           <div class="reviews__grid-item" data-slide="Slide--{{ block.id }}" data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
             {%- if review_url != blank -%}
-              <a href="{{ review_url }}" class="{{ review_block_classes }}" rel="noopener" target="_blank">
+              <a href="{{ review_url }}" class="{{ review_block_classes }}" rel="noopener noreferrer" target="_blank">
             {%- else -%}
               <div class="{{ review_block_classes }}">
             {%- endif -%}

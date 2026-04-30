@@ -159,6 +159,6 @@
   {%- elsif placeholder != blank -%}
     {{ placeholder | placeholder_svg_tag: 'svg-placeholder' }}
   {%- else -%}
-    <img src="{{ 'blank.svg' | asset_url }}" loading="lazy" class="{{ img_class }}">
+    <img src="{{ 'blank.svg' | asset_url }}" loading="lazy" alt="" class="{{ img_class }}">
   {%- endif -%}
 </figure>

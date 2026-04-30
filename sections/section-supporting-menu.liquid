@@ -51,7 +51,7 @@
             assign powered_by_link_html = powered_by_link_html | replace_first: powered_link_rel, ''
           endif
           if powered_by_link_html contains '<a '
-            assign powered_by_link_html = powered_by_link_html | replace: '<a ', '<a rel="noopener" '
+            assign powered_by_link_html = powered_by_link_html | replace: '<a ', '<a rel="noopener noreferrer" '
           endif
           assign powered_by_link = powered_by_link_html
         -%}

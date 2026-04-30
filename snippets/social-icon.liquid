@@ -14,7 +14,7 @@
 
 {%- if settings[social_link] != blank -%}
   <li>
-    <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}" target="_blank" class="social-link">
+    <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}" target="_blank" rel="noopener noreferrer" class="social-link">
       {%- case social_handle -%}
       {%- when 'instagram' -%}
         {%- render 'icon-instagram' -%}

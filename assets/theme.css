@@ -24399,3 +24399,26 @@ ul.cartDrawer.supporting-menu__payment.payment-icons.inline-list {
     padding: 10px 16px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-aos] {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .splide__track,
+  [data-marquee],
+  .ticker--animated {
+    animation: none !important;
+  }
+}
