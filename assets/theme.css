@@ -8275,6 +8275,13 @@ announcement-bar {
   .announcement__text p {
     display: inline;
   }
+  .announcement__text p + p::before {
+    content: " ";
+    white-space: pre;
+  }
+  .announcement__text br {
+    display: none;
+  }
 }
 
 .announcement__text > div {
