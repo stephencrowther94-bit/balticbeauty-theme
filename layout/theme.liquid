@@ -54,29 +54,28 @@
 
 
   <!-- Title and description ================================================ -->
-  {% capture seo_title %}
-    {% assign title_content = page_title %}
-    {% if template == 'password' %}
-      {% assign title_content = shop.name %}
+  {%- capture seo_title -%}
+    {%- assign title_content = page_title -%}
+    {%- if template == 'password' -%}
+      {%- assign title_content = shop.name -%}
     {%- endif -%}
     {{ title_content }}
-    {% if current_tags %}
-      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
-    {% endif %}
-    {% if current_page != 1 %}
+    {%- if current_tags -%}
+      {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
       &ndash; {{ 'general.meta.page' | t: page: current_page }}
-    {% endif %}
-    {% unless page_title contains shop.name %}
+    {%- endif -%}
+    {%- unless page_title contains shop.name -%}
       &ndash; {{ shop.name }}
-    {% endunless %}
-  {% endcapture %}
-  
+    {%- endunless -%}
+  {%- endcapture -%}
 
   <!-- Avada Size Chart Script -->
  {% include 'avada-sc-setting' %}
   <!-- /Avada Size Chart Script -->
 
-<title>{{ seo_title }}</title>
+<title>{{ seo_title | strip_newlines | strip }}</title>
 
 
   <!-- CSS ================================================================== -->
@@ -327,17 +326,17 @@
     }
   });
 </script>
-{% if template.name =='blog' %}
-<h1 style="display:none">{{blog.title}}</h1>
+{% if template.name == 'blog' %}
+  <h1 class="visually-hidden">{{ blog.title }}</h1>
 {% endif %}
-{% if template.name =='page' %}
-<h1 style="display:none">{{page.title}}</h1>
+{% if template.name == 'page' %}
+  <h1 class="visually-hidden">{{ page.title }}</h1>
 {% endif %}
-{% if template.name =='index' %}
-<h1 style="display:none">{{page.title}}</h1>
+{% if template.name == 'index' %}
+  <h1 class="visually-hidden">{{ shop.name }}{% if page_description != blank %} — {{ page_description | strip_html | truncate: 100 }}{% endif %}</h1>
 {% endif %}
-{% if template.name =='article' %}
-<h1 style="display:none">{{page.title}}</h1>
+{% if template.name == 'article' %}
+  <h1 class="visually-hidden">{{ article.title | default: page.title }}</h1>
 {% endif %}
 
 <link rel="stylesheet" data-href="https://use.typekit.net/cwy2ysj.css">

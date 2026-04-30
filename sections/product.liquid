@@ -771,9 +771,17 @@
     endif
   -%}
 
+  {%- liquid
+    assign loox_avg = product.metafields.loox.avg_rating
+    assign loox_count = product.metafields.loox.num_reviews
+    assign reviews_avg = product.metafields.reviews.rating.value
+    assign reviews_count = product.metafields.reviews.rating_count.value
+    assign rating_value = reviews_avg | default: loox_avg
+    assign rating_count = reviews_count | default: loox_count
+  -%}
   <script type="application/ld+json">
   {
-    "@context": "http://schema.org/",
+    "@context": "https://schema.org/",
     "@type": "Product",
     "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
@@ -786,13 +794,11 @@
     {%- if current_variant.sku != blank -%}
       "sku": {{ current_variant.sku | json }},
     {%- endif -%}
-    {%- if product.metafields.reviews.rating.value != blank -%}
+    {%- if rating_value != blank and rating_count != blank and rating_count != 0 -%}
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "{{ product.metafields.reviews.rating.value }}",
-        "ratingCount": "{{ product.metafields.reviews.rating_count.value }}",
-        "bestRating": "{{ product.metafields.reviews.rating.value.scale_max }}",
-        "worstRating": "{{ product.metafields.reviews.rating.value.scale_min }}"
+        "ratingValue": "{{ rating_value }}",
+        "reviewCount": "{{ rating_count }}"
       },
     {%- endif -%}
     "brand": {
@@ -815,7 +821,7 @@
           {%- if variant.barcode.size == 14 -%}
             "gtin14": {{ variant.barcode }},
           {%- endif -%}
-          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+          "availability" : "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
           "price" : {{ variant.price | divided_by: 100.00 | json }},
           "priceCurrency" : {{ cart.currency.iso_code | json }},
           "priceValidUntil": "{{ 'now' | date: '%s' | plus: seconds_price_valid | date: '%Y-%m-%d' }}",
