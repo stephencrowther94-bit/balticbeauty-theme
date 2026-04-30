@@ -31,7 +31,7 @@
   <div class="brick__block__text{{ padding_class }}">
     <div class="brick__block__text__inner">
       {%- if review_url != blank -%}
-        <a href="{{ review_url }}" class="{{ review_block_classes }}" rel="noopener" target="_blank">
+        <a href="{{ review_url }}" class="{{ review_block_classes }}" rel="noopener noreferrer" target="_blank">
       {%- else -%}
         <div class="{{ review_block_classes }}">  
       {%- endif -%}

@@ -109,10 +109,10 @@
       {%- if related -%}
         <div class="tab-content tab-content-0 current tabs__recommendation" data-tab-index="0">
           {%- if related_title != blank and enable_tabs != true -%}
-            <h6 class="tab__title"
+            <h2 class="tab__title h6"
               data-aos="hero"
               data-aos-anchor="{{ animation_anchor }}"
-              data-aos-order="1">{{ related_title }}</h6>
+              data-aos-order="1">{{ related_title }}</h2>
           {%- endif -%}
 
           {{ related }}
@@ -122,10 +122,10 @@
       {%- if recent -%}
         <div class="tab-content tab-content-1 tabs__recently-viewed{% if enable_tabs == false or related == nil %} current{% endif %}" data-tab-index="1" style="--column-count: {{ product_recently_limit }}">
           {%- if recent_title != blank and enable_tabs == false -%}
-            <h6 class="tab__title"
+            <h2 class="tab__title h6"
               data-aos="hero"
               data-aos-anchor="{{ animation_anchor }}"
-              data-aos-order="1">{{ recent_title }}</h6>
+              data-aos-order="1">{{ recent_title }}</h2>
           {%- endif -%}
 
           {{ recent }}

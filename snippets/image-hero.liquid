@@ -81,12 +81,13 @@
       {% endif %}>
 
       {%- if image contains 'blank.svg' or image == blank -%}
-        <img src="{{ 'blank.svg' | asset_url }}" loading="lazy" class="is-loading">
+        <img src="{{ 'blank.svg' | asset_url }}" loading="lazy" alt="" class="is-loading">
       {%- else -%}
         {{ image | image_url: width: width | image_tag:
           loading: 'lazy',
           widths: widths,
           sizes: sizes,
+          alt: image.alt,
           fetchpriority: fetchpriority,
           class: 'is-loading'
         }}

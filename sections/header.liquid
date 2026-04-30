@@ -200,6 +200,7 @@
   <div class="header__logo{% if logo %} header__logo--image{% endif %}{% if has_transparent_logo %} header__logo--has-transparent{% endif %}">
     <a class="header__logo__link"
         href="{{ routes.root_url }}"
+        aria-label="{{ shop.name | strip_html | escape }} — {{ 'general.accessibility.home' | t | default: 'Home' }}"
     >
       {%- if logo != blank -%}
         {%- liquid

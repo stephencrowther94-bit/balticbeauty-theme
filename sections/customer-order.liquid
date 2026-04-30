@@ -18,12 +18,12 @@
           {% render block %}
 
         {%- when 'link' -%}
-          <li {{ block.shopify_attributes }}><a href="{{ block.settings.link }}" rel="noopener" target="_blank">{{ block.settings.title }}</a></li>
+          <li {{ block.shopify_attributes }}><a href="{{ block.settings.link }}" rel="noopener noreferrer" target="_blank">{{ block.settings.title }}</a></li>
 
         {%- when 'email' -%}
           {% assign default_text = 'customer.account.contact_store' | t %}
           {% assign default_email = shop.email %}
-          <li {{ block.shopify_attributes }}><a href="mailto:{{ block.settings.email | default: default_email }}" rel="noopener" target="_blank">{{ block.settings.title | default: default_text }}</a></li>
+          <li {{ block.shopify_attributes }}><a href="mailto:{{ block.settings.email | default: default_email }}" rel="noopener noreferrer" target="_blank">{{ block.settings.title | default: default_text }}</a></li>
 
         {%- when 'account' -%}
           {%- assign needs_completion = false -%}
