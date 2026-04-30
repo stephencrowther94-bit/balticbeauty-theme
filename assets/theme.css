@@ -8271,6 +8271,12 @@ announcement-bar {
   margin: 0;
 }
 
+@media only screen and (min-width: 750px) {
+  .announcement__text p {
+    display: inline;
+  }
+}
+
 .announcement__text > div {
   display: inline-flex;
   align-items: center;
