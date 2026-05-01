@@ -1,1 +1,696 @@
-{"sections":{"c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f":{"type":"section-hero","blocks":{"template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-0":{"type":"heading","settings":{"title":"25% OFF FULL PRICE","heading_size":7}},"template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-1":{"type":"text","settings":{"description":"+ FREE £40 Earrings","text_size":5,"text_style":"font-body"}},"template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-2":{"type":"button","settings":{"link_text":"ENDS MIDNIGHT","link":"shopify:\/\/collections\/shop-everything","button_type":"btn--black","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-0","template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-1","template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-2"],"settings":{"height":"screen-height-two-thirds","width":"wrapper--full","image_1":"shopify:\/\/shop_images\/Little_Multicolour_Amber_Pendant_06m68_b.jpg","image_2":"shopify:\/\/shop_images\/productswhite-92.jpg","link":"shopify:\/\/collections\/shop-everything","mobile_height":"screen-height-two-thirds--mobile","mobile_image":"shopify:\/\/shop_images\/Little_Multicolour_Amber_Pendant_06m68_b.jpg","flex_align_desktop":"align--bottom-left-desktop","flex_align_mobile":"align--bottom-left-mobile","overlay_opacity":5,"overlay_color":"#000000","show_overlay_text":true,"bg_color":"","color":"#ffffff"}},"030e1860-db80-4377-8df2-9d6d28113ecd":{"type":"section-press-logos","blocks":{"template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-1":{"type":"logo-item","settings":{"logo":"shopify:\/\/shop_images\/3.png","logo_width":100,"link":"","description":"<p>Include a brief quote from a brand that loves your products<\/p>","heading_size":6}},"template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-2":{"type":"logo-item","settings":{"logo":"shopify:\/\/shop_images\/4.png","logo_width":100,"link":"","description":"<p>Include a brief quote from a brand that loves your products<\/p>","heading_size":8}},"template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-0":{"type":"logo-item","settings":{"logo":"shopify:\/\/shop_images\/1.png","logo_width":100,"link":"","description":"<p>Include a brief quote from a brand that loves your products<\/p>","heading_size":3}},"ca397116-0123-4494-a95e-fc4863df9952":{"type":"logo-item","settings":{"logo":"shopify:\/\/shop_images\/5.png","logo_width":100,"link":"","description":"<p>Include a brief quote from a brand that loves your products<\/p>","heading_size":6}},"fd35345d-7f08-4c89-9fe8-82c252fe8d1a":{"type":"logo-item","settings":{"logo":"shopify:\/\/shop_images\/2.png","logo_width":100,"link":"","description":"<p>Include a brief quote from a brand that loves your products<\/p>","heading_size":6}}},"block_order":["template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-1","template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-2","template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-0","ca397116-0123-4494-a95e-fc4863df9952","fd35345d-7f08-4c89-9fe8-82c252fe8d1a"],"settings":{"title":"IN THE PRESS","enable_heading_slider":false,"text_style":"font-body","logo_opacity":5,"bg_color":"","color":"","padding_top":20,"padding_bottom":20}},"380bdb5c-03ab-4e5d-af5c-10133ae2eba0":{"type":"section-collections-list","blocks":{"template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-1":{"type":"collection","settings":{"collection":"gifts-under-50","collection_image":"shopify:\/\/shop_images\/04A3105.jpg","title":""}},"template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-2":{"type":"collection","settings":{"collection":"amber-gifts-under-100","collection_image":"shopify:\/\/shop_images\/02A287.jpg","title":""}},"template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-3":{"type":"collection","settings":{"collection":"amber-gifts-under-200","collection_image":"shopify:\/\/shop_images\/07M538.jpg","title":""}},"template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-4":{"type":"collection","settings":{"collection":"best-sellers","collection_image":"shopify:\/\/shop_images\/04A2801.jpg","title":""}}},"block_order":["template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-1","template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-2","template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-3","template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-4"],"settings":{"title":"Shop our Curated Gifts Guides","description":"","layout":"grid","aspect_ratio":1.1,"grid":4,"layout_mobile":"2","bg_color":"","color":"","padding_top":32,"padding_bottom":32}},"icons":{"type":"section-text-row","blocks":{"176c6388-5b5d-4b89-8c1d-b772162ab6b0":{"type":"icon","settings":{"icon_name":"icon-star","icon_size":25,"icon_color":"#545454","title":"Genuine Baltic Amber","heading_size":5,"text":"<p>From the Baltic Sea. Certified by the IAA.<\/p>","text_size":3}},"f00eb63b-6d33-4b63-a4f7-ba648f9326d7":{"type":"icon","settings":{"icon_name":"icon-award","icon_size":25,"icon_color":"#545454","title":"Free Shipping & Easy Returns","heading_size":5,"text":"<p><a href=\"\/pages\/delivery\" title=\"Delivery\">Find out more<\/a><\/p>","text_size":3}},"7c02daed-7916-47a4-a19a-2b8652423a35":{"type":"icon","settings":{"icon_name":"icon-recycle","icon_size":25,"icon_color":"#545454","title":"4.9\/5 on Trustpilot","heading_size":5,"text":"<p>We're an excellent company on Trustpilot.<\/p>","text_size":3}}},"block_order":["176c6388-5b5d-4b89-8c1d-b772162ab6b0","f00eb63b-6d33-4b63-a4f7-ba648f9326d7","7c02daed-7916-47a4-a19a-2b8652423a35"],"settings":{"title":"","heading_size":5,"align_text":"text-left","icon_alignment":"icon--top","align_columns":"flex-align-top","width":"wrapper--full-padded","bg_color":"#fafafa","color":"","padding_top":35,"padding_bottom":35,"layout_mobile":"grid"}},"featured-collection":{"type":"section-collection","settings":{"heading":"Get the Most Popular Elements Style","description":"","layout":"inline","link_text":"Shop All Elements","link_url":"shopify:\/\/collections\/elements","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"featured_collection":"elements","style":"slider","grid":6,"rows":1,"width":"wrapper","layout_mobile":"carousel","bg_color":"","color":"","padding_top":60,"padding_bottom":60}},"image-with-text":{"type":"section-custom-content","blocks":{"text":{"type":"text","settings":{"subheading":"Jewellery Box Must Haves","subheading_size":2,"title":"Our Everyday Favourites","heading_size":7,"text":"<p>From Elements, to Essentials, to Classic Handmades. Discover our go-to amber pieces we just can't keep in stock.<\/p>","text_size":3,"button_text":"Shop All","button_url":"shopify:\/\/collections\/amber-jewellery","button_type":"btn--primary","button_size":"","button_style":"hero__btn btn btn--input btn--outline caps","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"rgba(0,0,0,0)","color":""}},"image":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Untitled_design_2.jpg","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"title":"","heading_size":7,"description":"","text_size":3,"flex_align":"align--middle-left","bg_color":"","color":"#ffffff","link_text":"","link":"https:\/\/balticbeauty.co.uk\/collections\/amber-jewellery","button_type":"btn--primary","button_size":"","button_style":"hero__btn btn btn--large btn--outline caps","show_arrow":false}}},"block_order":["text","image"],"settings":{"height":"screen-height-one-half","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full","borders":false,"reverse_blocks":false,"padding_top":0,"padding_bottom":0}},"0f214b60-1f99-44d2-9519-1c4e46863174":{"type":"section-collections-list","blocks":{"template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-1":{"type":"collection","settings":{"collection":"amber-earrings","collection_image":"shopify:\/\/shop_images\/07A5721.jpg","title":"Earrings"}},"template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-2":{"type":"collection","settings":{"collection":"amber-necklaces","collection_image":"shopify:\/\/shop_images\/05A91_92fd1821-6b71-4051-bab8-a1bb7a928f2e.jpg","title":"Necklaces"}},"template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-3":{"type":"collection","settings":{"collection":"amber-rings","collection_image":"shopify:\/\/shop_images\/Mini-Cherry-Red-Amber-Quintessence-Ring-Baltic-Beauty-1695212030823.jpg","title":"Rings"}},"template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-4":{"type":"collection","settings":{"collection":"amber-bracelets","collection_image":"shopify:\/\/shop_images\/Amber-Quintessence-Link-Bracelet-Baltic-Beauty-1695206662649.jpg","title":"Bracelets"}},"5e56d17c-3810-4440-bb5d-5ea7d72199c4":{"type":"collection","settings":{"collection":"amber-brooches","collection_image":"shopify:\/\/shop_images\/04A40.jpg","title":"Brooches"}},"13014fb8-b58a-42ce-b567-3befcd14e58c":{"type":"collection","settings":{"collection":"amber-cufflinks","collection_image":"shopify:\/\/shop_images\/ESSENTIALS-Amber-Cufflinks-Baltic-Beauty-1695209206424.jpg","title":"Cufflinks"}}},"block_order":["template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-1","template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-2","template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-3","template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-4","5e56d17c-3810-4440-bb5d-5ea7d72199c4","13014fb8-b58a-42ce-b567-3befcd14e58c"],"settings":{"title":"Discover Our Everyday Pieces","description":"","layout":"grid","aspect_ratio":1.2,"grid":6,"layout_mobile":"2","bg_color":"","color":"","padding_top":60,"padding_bottom":60}},"rich-text":{"type":"section-rich-text","blocks":{"fbd2f824-9486-4d53-a93f-f89016c7d50c":{"type":"subheading","settings":{"subheading":"Handmade & Ethically Sourced","text_size":2}},"220d20fe-9915-4254-b382-896a3aff3bab":{"type":"heading","settings":{"title":"Recommended by the IAA","text_size":7}},"75a8331f-8e42-48fc-83dd-f6b2b31fa617":{"type":"columns","settings":{"text":"<p>We're so proud to have been registered by the <a href=\"https:\/\/www.amber.org.pl\/en\" target=\"_blank\" title=\"international amber association \">International Amber Association (IAA)<\/a> as an official <a href=\"https:\/\/www.amber.org.pl\/en\/firmy-rekomendowane\" target=\"_blank\" title=\"recommended seller of amber jewellery\">Recommended Seller of Amber Jewellery<\/a>. We commit ourselves to meeting all criteria as laid out by the IAA, as well as offering a guarantee of the authenticity. Learn more <a href=\"https:\/\/balticbeauty.co.uk\/pages\/about-baltic-amber\" title=\"about baltic amber\">about Baltic Amber<\/a> and its origins or browse our <a href=\"https:\/\/balticbeauty.co.uk\/collections\/amber-jewellery\" title=\"amber jewellery\">Amber Jewellery<\/a> collections.<\/p>","text_columns":2,"text_size":3,"text_style":"font-body"}},"e71f76e3-53a3-4423-94c7-7f166d7b7cb8":{"type":"buttons","settings":{"button_text":"Learn more","button_url":"https:\/\/balticbeauty.co.uk\/pages\/certified-amber-jewellery","button_type":"btn--black","button_size":"","button_style":"btn--text","show_arrow":false}}},"block_order":["fbd2f824-9486-4d53-a93f-f89016c7d50c","220d20fe-9915-4254-b382-896a3aff3bab","75a8331f-8e42-48fc-83dd-f6b2b31fa617","e71f76e3-53a3-4423-94c7-7f166d7b7cb8"],"name":"IAA","settings":{"width":"wrapper","align_text":"text-left","bg_color":"#f0f0f0","color":"#000000","padding_top":60,"padding_bottom":60}},"258e4c2e-fac2-4077-8da9-cbd0ab68c802":{"type":"section-tab-collections","blocks":{"template--16825504628974__258e4c2e-fac2-4077-8da9-cbd0ab68c802-16881264615aeac199-0":{"type":"collection","settings":{"title":"Meet our best sellers","featured_collection":"amber-jewellery","show_image":true,"align_with_product_images":false,"overlay_opacity":0,"overlay_color":"#000000","description":"","color":"#ffffff","link_text":"View All","link":"shopify:\/\/collections\/amber-jewellery","button_type":"btn--white","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["template--16825504628974__258e4c2e-fac2-4077-8da9-cbd0ab68c802-16881264615aeac199-0"],"settings":{"title":"Trending Jewellery","text":"","layout":"left","show_product_count":false,"product_layout":"slider","product_limit":12,"grid":6,"rows":2,"bg_color":"","color":"","padding_top":32,"padding_bottom":32}},"aef0568c-de5e-4b45-a586-5a710b77dfd1":{"type":"section-collection","settings":{"heading":"Our Minimal Essentials Collection","description":"","layout":"inline","link_text":"Shop All Essentials","link_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"featured_collection":"essentials","style":"slider","grid":6,"rows":3,"width":"wrapper","layout_mobile":"carousel","bg_color":"","color":"","padding_top":60,"padding_bottom":60}},"11c46f4a-4380-490e-8989-4d1e94ee2f69":{"type":"section-rich-text","blocks":{"3b6a915d-fe69-4dc1-bb1f-6cecb52c4ffa":{"type":"heading","settings":{"title":"What our customers say...","text_size":7}}},"block_order":["3b6a915d-fe69-4dc1-bb1f-6cecb52c4ffa"],"settings":{"width":"wrapper","align_text":"text-left","bg_color":"","color":"","padding_top":60,"padding_bottom":0}},"57f0e4af-e054-486c-b12a-e79b15e9471b":{"type":"section-reviews","blocks":{"template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-3":{"type":"review","settings":{"title":"Zoe M","subheading":"VERIFIED PURCHASE<br><br>★★★★★","review_text":"Quick delivery and absolutely stunning jewellery it was better than what I expected !!","featured_image":"shopify:\/\/shop_images\/epXvrXGjdZ_mid.jpg","review_url":""}},"template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-1":{"type":"review","settings":{"title":"Emily D","subheading":"VERIFIED PURCHASE★★★★★","review_text":"Bought for myself as a treat. The detail of the amber is stunning and really catches in the light. I love the unique shape of this collection. Will be back for more!","featured_image":"shopify:\/\/shop_images\/gnJ280dE8.jpg","review_url":""}},"77a7ce6b-6e8d-42f1-860b-fb3e98f51116":{"type":"review","settings":{"title":"Hanbury A","subheading":"VERIFIED PURCHASE<br><br>★★★★★","review_text":"Such an elegant meaningful piece of jewellery, I will be adding to my collection.","featured_image":"shopify:\/\/shop_images\/kbjtdnk8s_mid.jpg","review_url":""}},"22cde2c5-d22f-42dd-9921-411b9bf8454c":{"type":"review","settings":{"title":"Charlotte A","subheading":"VERIFIED PURCHASE<br><br>★★★★★","review_text":"Best quality silver amber jewellery I have found, absolutely in love with this piece. Just ordering the bee brooch now as we speak. Beautifully packaged and arrived on time. Thank you!","featured_image":"shopify:\/\/shop_images\/DdLwyBjbJ_mid.jpg","review_url":""}},"890eee7c-0341-4662-88de-e5615dc857f9":{"type":"review","settings":{"title":"Robert D","subheading":"VERIFIED PURCHASE<br><br>★★★★★","review_text":"Great experience with the online store.  A vast array of designs to suit both men and woman.  The piece of Amber comes well presented and fast delivery. Will certainly shop again!!","featured_image":"shopify:\/\/shop_images\/5mFCY-iqy_mid.jpg","review_url":""}},"template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-2":{"type":"review","settings":{"title":"Maria F","subheading":"VERIFIED PURCHASE<br><br>★★★★★","review_text":"This pendant is just as pictured. The chain it comes with is beautiful. All around an elegant piece of jewellery.","featured_image":"shopify:\/\/shop_images\/sSkxOzJEv_mid.jpg","review_url":""}}},"block_order":["template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-3","template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-1","77a7ce6b-6e8d-42f1-860b-fb3e98f51116","22cde2c5-d22f-42dd-9921-411b9bf8454c","890eee7c-0341-4662-88de-e5615dc857f9","template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-2"],"settings":{"show_featured_image":true,"image_aspect_ratio":1.2,"show_quotation_marks":true,"text_align":"text-left","text_size":3,"bg_color":"","color":"","card_bg_color":"rgba(0,0,0,0)","padding_top":30,"padding_bottom":20}},"section_rich_text_nbpaDC":{"type":"section-rich-text","blocks":{"heading_qLWngK":{"type":"heading","settings":{"title":"The Heart of Certified Amber Jewellery","text_size":7}},"text_q3Xxb4":{"type":"text","settings":{"text":"<p>Baltic Beauty is a prestigious UK based company known for its outstanding collection of certified Baltic Amber Jewellery, that ships worldwide. Our selection boasts expertly crafted pieces made with genuine certified baltic amber and the finest 925 sterling silver. We are deeply committed to authenticity, ensuring that our customers are presented with a remarkable array of Baltic Amber treasures. From stunning 925 sterling silver amber bracelets to majestic rings adorned with Baltic amber. At Baltic Beauty, we invite you to discover the exquisite allure of our jewellery collection, meticulously crafted to satisfy even the most refined tastes. Baltic Beauty was founded and catapulted into a well known Amber Jewellery brand from the <a href=\"https:\/\/balticbeauty.co.uk\/collections\/elements\" title=\"https:\/\/balticbeauty.co.uk\/collections\/elements\">ELEMENTS<\/a> and <a href=\"https:\/\/balticbeauty.co.uk\/collections\/essentials\" title=\"https:\/\/balticbeauty.co.uk\/collections\/essentials\">ESSENTIALS<\/a> collections. Baltic Beauty is now the leading UK retailer of Baltic Amber Jewellery.<\/p>","text_size":2,"text_style":"font-body"}},"buttons_7BqqFz":{"type":"buttons","settings":{"button_text":"Shop Jewellery","button_url":"shopify:\/\/collections\/amber-jewellery","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["heading_qLWngK","text_q3Xxb4","buttons_7BqqFz"],"settings":{"width":"wrapper","align_text":"text-center","bg_color":"","color":"","padding_top":60,"padding_bottom":60}}},"order":["c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f","030e1860-db80-4377-8df2-9d6d28113ecd","380bdb5c-03ab-4e5d-af5c-10133ae2eba0","icons","featured-collection","image-with-text","0f214b60-1f99-44d2-9519-1c4e46863174","rich-text","258e4c2e-fac2-4077-8da9-cbd0ab68c802","aef0568c-de5e-4b45-a586-5a710b77dfd1","11c46f4a-4380-490e-8989-4d1e94ee2f69","57f0e4af-e054-486c-b12a-e79b15e9471b","section_rich_text_nbpaDC"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f": {
+      "type": "section-hero",
+      "blocks": {
+        "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-0": {
+          "type": "heading",
+          "settings": {
+            "title": "FREE £40 EARRINGS",
+            "heading_size": 7
+          }
+        },
+        "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-1": {
+          "type": "text",
+          "settings": {
+            "description": "With Every Full Price Order",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        },
+        "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-2": {
+          "type": "button",
+          "settings": {
+            "link_text": "ENDS MIDNIGHT",
+            "link": "shopify://collections/shop-everything",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-0",
+        "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-1",
+        "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-2"
+      ],
+      "settings": {
+        "height": "screen-height-two-thirds",
+        "width": "wrapper--full",
+        "image_1": "shopify://shop_images/Little_Multicolour_Amber_Pendant_06m68_b.jpg",
+        "image_2": "shopify://shop_images/productswhite-92.jpg",
+        "link": "shopify://collections/shop-everything",
+        "mobile_height": "screen-height-two-thirds--mobile",
+        "mobile_image": "shopify://shop_images/Little_Multicolour_Amber_Pendant_06m68_b.jpg",
+        "flex_align_desktop": "align--bottom-left-desktop",
+        "flex_align_mobile": "align--bottom-left-mobile",
+        "overlay_opacity": 5,
+        "overlay_color": "#000000",
+        "show_overlay_text": true,
+        "bg_color": "",
+        "color": "#ffffff"
+      }
+    },
+    "030e1860-db80-4377-8df2-9d6d28113ecd": {
+      "type": "section-press-logos",
+      "blocks": {
+        "template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-1": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify://shop_images/3.png",
+            "logo_width": 100,
+            "link": "",
+            "description": "<p>Include a brief quote from a brand that loves your products</p>",
+            "heading_size": 6
+          }
+        },
+        "template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-2": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify://shop_images/4.png",
+            "logo_width": 100,
+            "link": "",
+            "description": "<p>Include a brief quote from a brand that loves your products</p>",
+            "heading_size": 8
+          }
+        },
+        "template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-0": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify://shop_images/1.png",
+            "logo_width": 100,
+            "link": "",
+            "description": "<p>Include a brief quote from a brand that loves your products</p>",
+            "heading_size": 3
+          }
+        },
+        "ca397116-0123-4494-a95e-fc4863df9952": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify://shop_images/5.png",
+            "logo_width": 100,
+            "link": "",
+            "description": "<p>Include a brief quote from a brand that loves your products</p>",
+            "heading_size": 6
+          }
+        },
+        "fd35345d-7f08-4c89-9fe8-82c252fe8d1a": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify://shop_images/2.png",
+            "logo_width": 100,
+            "link": "",
+            "description": "<p>Include a brief quote from a brand that loves your products</p>",
+            "heading_size": 6
+          }
+        }
+      },
+      "block_order": [
+        "template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-1",
+        "template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-2",
+        "template--16825504628974__030e1860-db80-4377-8df2-9d6d28113ecd-1688039179ab09267e-0",
+        "ca397116-0123-4494-a95e-fc4863df9952",
+        "fd35345d-7f08-4c89-9fe8-82c252fe8d1a"
+      ],
+      "settings": {
+        "title": "IN THE PRESS",
+        "enable_heading_slider": false,
+        "text_style": "font-body",
+        "logo_opacity": 5,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "380bdb5c-03ab-4e5d-af5c-10133ae2eba0": {
+      "type": "section-collections-list",
+      "blocks": {
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-under-50",
+            "collection_image": "shopify://shop_images/04A3105.jpg",
+            "title": ""
+          }
+        },
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-gifts-under-100",
+            "collection_image": "shopify://shop_images/02A287.jpg",
+            "title": ""
+          }
+        },
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-gifts-under-200",
+            "collection_image": "shopify://shop_images/07M538.jpg",
+            "title": ""
+          }
+        },
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "collection_image": "shopify://shop_images/04A2801.jpg",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-1",
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-2",
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-3",
+        "template--16846980841710__380bdb5c-03ab-4e5d-af5c-10133ae2eba0-collection-4"
+      ],
+      "settings": {
+        "title": "Shop our Curated Gifts Guides",
+        "description": "",
+        "layout": "grid",
+        "aspect_ratio": 1.1,
+        "grid": 4,
+        "layout_mobile": "2",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "icons": {
+      "type": "section-text-row",
+      "blocks": {
+        "176c6388-5b5d-4b89-8c1d-b772162ab6b0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "Genuine Baltic Amber",
+            "heading_size": 5,
+            "text": "<p>From the Baltic Sea. Certified by the IAA.</p>",
+            "text_size": 3
+          }
+        },
+        "f00eb63b-6d33-4b63-a4f7-ba648f9326d7": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "Free Shipping & Easy Returns",
+            "heading_size": 5,
+            "text": "<p><a href=\"/pages/delivery\" title=\"Delivery\">Find out more</a></p>",
+            "text_size": 3
+          }
+        },
+        "7c02daed-7916-47a4-a19a-2b8652423a35": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-recycle",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "4.9/5 on Trustpilot",
+            "heading_size": 5,
+            "text": "<p>We're an excellent company on Trustpilot.</p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "176c6388-5b5d-4b89-8c1d-b772162ab6b0",
+        "f00eb63b-6d33-4b63-a4f7-ba648f9326d7",
+        "7c02daed-7916-47a4-a19a-2b8652423a35"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#fafafa",
+        "color": "",
+        "padding_top": 35,
+        "padding_bottom": 35,
+        "layout_mobile": "grid"
+      }
+    },
+    "featured-collection": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Get the Most Popular Elements Style",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop All Elements",
+        "link_url": "shopify://collections/elements",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": false,
+        "featured_collection": "elements",
+        "style": "slider",
+        "grid": 6,
+        "rows": 1,
+        "width": "wrapper",
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "subheading": "Jewellery Box Must Haves",
+            "subheading_size": 2,
+            "title": "Our Everyday Favourites",
+            "heading_size": 7,
+            "text": "<p>From Elements, to Essentials, to Classic Handmades. Discover our go-to amber pieces we just can't keep in stock.</p>",
+            "text_size": 3,
+            "button_text": "Shop All",
+            "button_url": "shopify://collections/amber-jewellery",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "hero__btn btn btn--input btn--outline caps",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "rgba(0,0,0,0)",
+            "color": ""
+          }
+        },
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_2.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-left",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "https://balticbeauty.co.uk/collections/amber-jewellery",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "hero__btn btn btn--large btn--outline caps",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "image"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "0f214b60-1f99-44d2-9519-1c4e46863174": {
+      "type": "section-collections-list",
+      "blocks": {
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-earrings",
+            "collection_image": "shopify://shop_images/07A5721.jpg",
+            "title": "Earrings"
+          }
+        },
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-necklaces",
+            "collection_image": "shopify://shop_images/05A91_92fd1821-6b71-4051-bab8-a1bb7a928f2e.jpg",
+            "title": "Necklaces"
+          }
+        },
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-rings",
+            "collection_image": "shopify://shop_images/Mini-Cherry-Red-Amber-Quintessence-Ring-Baltic-Beauty-1695212030823.jpg",
+            "title": "Rings"
+          }
+        },
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-bracelets",
+            "collection_image": "shopify://shop_images/Amber-Quintessence-Link-Bracelet-Baltic-Beauty-1695206662649.jpg",
+            "title": "Bracelets"
+          }
+        },
+        "5e56d17c-3810-4440-bb5d-5ea7d72199c4": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-brooches",
+            "collection_image": "shopify://shop_images/04A40.jpg",
+            "title": "Brooches"
+          }
+        },
+        "13014fb8-b58a-42ce-b567-3befcd14e58c": {
+          "type": "collection",
+          "settings": {
+            "collection": "amber-cufflinks",
+            "collection_image": "shopify://shop_images/ESSENTIALS-Amber-Cufflinks-Baltic-Beauty-1695209206424.jpg",
+            "title": "Cufflinks"
+          }
+        }
+      },
+      "block_order": [
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-1",
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-2",
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-3",
+        "template--16846980841710__0f214b60-1f99-44d2-9519-1c4e46863174-collection-4",
+        "5e56d17c-3810-4440-bb5d-5ea7d72199c4",
+        "13014fb8-b58a-42ce-b567-3befcd14e58c"
+      ],
+      "settings": {
+        "title": "Discover Our Everyday Pieces",
+        "description": "",
+        "layout": "grid",
+        "aspect_ratio": 1.2,
+        "grid": 6,
+        "layout_mobile": "2",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "rich-text": {
+      "type": "section-rich-text",
+      "blocks": {
+        "fbd2f824-9486-4d53-a93f-f89016c7d50c": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Handmade & Ethically Sourced",
+            "text_size": 2
+          }
+        },
+        "220d20fe-9915-4254-b382-896a3aff3bab": {
+          "type": "heading",
+          "settings": {
+            "title": "Recommended by the IAA",
+            "text_size": 7
+          }
+        },
+        "75a8331f-8e42-48fc-83dd-f6b2b31fa617": {
+          "type": "columns",
+          "settings": {
+            "text": "<p>We're so proud to have been registered by the <a href=\"https://www.amber.org.pl/en\" target=\"_blank\" title=\"international amber association \">International Amber Association (IAA)</a> as an official <a href=\"https://www.amber.org.pl/en/firmy-rekomendowane\" target=\"_blank\" title=\"recommended seller of amber jewellery\">Recommended Seller of Amber Jewellery</a>. We commit ourselves to meeting all criteria as laid out by the IAA, as well as offering a guarantee of the authenticity. Learn more <a href=\"https://balticbeauty.co.uk/pages/about-baltic-amber\" title=\"about baltic amber\">about Baltic Amber</a> and its origins or browse our <a href=\"https://balticbeauty.co.uk/collections/amber-jewellery\" title=\"amber jewellery\">Amber Jewellery</a> collections.</p>",
+            "text_columns": 2,
+            "text_size": 3,
+            "text_style": "font-body"
+          }
+        },
+        "e71f76e3-53a3-4423-94c7-7f166d7b7cb8": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "https://balticbeauty.co.uk/pages/certified-amber-jewellery",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "fbd2f824-9486-4d53-a93f-f89016c7d50c",
+        "220d20fe-9915-4254-b382-896a3aff3bab",
+        "75a8331f-8e42-48fc-83dd-f6b2b31fa617",
+        "e71f76e3-53a3-4423-94c7-7f166d7b7cb8"
+      ],
+      "name": "IAA",
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "#f0f0f0",
+        "color": "#000000",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "258e4c2e-fac2-4077-8da9-cbd0ab68c802": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "template--16825504628974__258e4c2e-fac2-4077-8da9-cbd0ab68c802-16881264615aeac199-0": {
+          "type": "collection",
+          "settings": {
+            "title": "Meet our best sellers",
+            "featured_collection": "amber-jewellery",
+            "show_image": true,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View All",
+            "link": "shopify://collections/amber-jewellery",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16825504628974__258e4c2e-fac2-4077-8da9-cbd0ab68c802-16881264615aeac199-0"
+      ],
+      "settings": {
+        "title": "Trending Jewellery",
+        "text": "",
+        "layout": "left",
+        "show_product_count": false,
+        "product_layout": "slider",
+        "product_limit": 12,
+        "grid": 6,
+        "rows": 2,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "aef0568c-de5e-4b45-a586-5a710b77dfd1": {
+      "type": "section-collection",
+      "settings": {
+        "heading": "Our Minimal Essentials Collection",
+        "description": "",
+        "layout": "inline",
+        "link_text": "Shop All Essentials",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--text",
+        "show_arrow": false,
+        "featured_collection": "essentials",
+        "style": "slider",
+        "grid": 6,
+        "rows": 3,
+        "width": "wrapper",
+        "layout_mobile": "carousel",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "11c46f4a-4380-490e-8989-4d1e94ee2f69": {
+      "type": "section-rich-text",
+      "blocks": {
+        "3b6a915d-fe69-4dc1-bb1f-6cecb52c4ffa": {
+          "type": "heading",
+          "settings": {
+            "title": "What our customers say...",
+            "text_size": 7
+          }
+        }
+      },
+      "block_order": [
+        "3b6a915d-fe69-4dc1-bb1f-6cecb52c4ffa"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "57f0e4af-e054-486c-b12a-e79b15e9471b": {
+      "type": "section-reviews",
+      "blocks": {
+        "template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-3": {
+          "type": "review",
+          "settings": {
+            "title": "Zoe M",
+            "subheading": "VERIFIED PURCHASE<br><br>★★★★★",
+            "review_text": "Quick delivery and absolutely stunning jewellery it was better than what I expected !!",
+            "featured_image": "shopify://shop_images/epXvrXGjdZ_mid.jpg",
+            "review_url": ""
+          }
+        },
+        "template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-1": {
+          "type": "review",
+          "settings": {
+            "title": "Emily D",
+            "subheading": "VERIFIED PURCHASE★★★★★",
+            "review_text": "Bought for myself as a treat. The detail of the amber is stunning and really catches in the light. I love the unique shape of this collection. Will be back for more!",
+            "featured_image": "shopify://shop_images/gnJ280dE8.jpg",
+            "review_url": ""
+          }
+        },
+        "77a7ce6b-6e8d-42f1-860b-fb3e98f51116": {
+          "type": "review",
+          "settings": {
+            "title": "Hanbury A",
+            "subheading": "VERIFIED PURCHASE<br><br>★★★★★",
+            "review_text": "Such an elegant meaningful piece of jewellery, I will be adding to my collection.",
+            "featured_image": "shopify://shop_images/kbjtdnk8s_mid.jpg",
+            "review_url": ""
+          }
+        },
+        "22cde2c5-d22f-42dd-9921-411b9bf8454c": {
+          "type": "review",
+          "settings": {
+            "title": "Charlotte A",
+            "subheading": "VERIFIED PURCHASE<br><br>★★★★★",
+            "review_text": "Best quality silver amber jewellery I have found, absolutely in love with this piece. Just ordering the bee brooch now as we speak. Beautifully packaged and arrived on time. Thank you!",
+            "featured_image": "shopify://shop_images/DdLwyBjbJ_mid.jpg",
+            "review_url": ""
+          }
+        },
+        "890eee7c-0341-4662-88de-e5615dc857f9": {
+          "type": "review",
+          "settings": {
+            "title": "Robert D",
+            "subheading": "VERIFIED PURCHASE<br><br>★★★★★",
+            "review_text": "Great experience with the online store.  A vast array of designs to suit both men and woman.  The piece of Amber comes well presented and fast delivery. Will certainly shop again!!",
+            "featured_image": "shopify://shop_images/5mFCY-iqy_mid.jpg",
+            "review_url": ""
+          }
+        },
+        "template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-2": {
+          "type": "review",
+          "settings": {
+            "title": "Maria F",
+            "subheading": "VERIFIED PURCHASE<br><br>★★★★★",
+            "review_text": "This pendant is just as pictured. The chain it comes with is beautiful. All around an elegant piece of jewellery.",
+            "featured_image": "shopify://shop_images/sSkxOzJEv_mid.jpg",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-3",
+        "template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-1",
+        "77a7ce6b-6e8d-42f1-860b-fb3e98f51116",
+        "22cde2c5-d22f-42dd-9921-411b9bf8454c",
+        "890eee7c-0341-4662-88de-e5615dc857f9",
+        "template--16846980841710__57f0e4af-e054-486c-b12a-e79b15e9471b-review-2"
+      ],
+      "settings": {
+        "show_featured_image": true,
+        "image_aspect_ratio": 1.2,
+        "show_quotation_marks": true,
+        "text_align": "text-left",
+        "text_size": 3,
+        "bg_color": "",
+        "color": "",
+        "card_bg_color": "rgba(0,0,0,0)",
+        "padding_top": 30,
+        "padding_bottom": 20
+      }
+    },
+    "section_rich_text_nbpaDC": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_qLWngK": {
+          "type": "heading",
+          "settings": {
+            "title": "The Heart of Certified Amber Jewellery",
+            "text_size": 7
+          }
+        },
+        "text_q3Xxb4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Baltic Beauty is a prestigious UK based company known for its outstanding collection of certified Baltic Amber Jewellery, that ships worldwide. Our selection boasts expertly crafted pieces made with genuine certified baltic amber and the finest 925 sterling silver. We are deeply committed to authenticity, ensuring that our customers are presented with a remarkable array of Baltic Amber treasures. From stunning 925 sterling silver amber bracelets to majestic rings adorned with Baltic amber. At Baltic Beauty, we invite you to discover the exquisite allure of our jewellery collection, meticulously crafted to satisfy even the most refined tastes. Baltic Beauty was founded and catapulted into a well known Amber Jewellery brand from the <a href=\"https://balticbeauty.co.uk/collections/elements\" title=\"https://balticbeauty.co.uk/collections/elements\">ELEMENTS</a> and <a href=\"https://balticbeauty.co.uk/collections/essentials\" title=\"https://balticbeauty.co.uk/collections/essentials\">ESSENTIALS</a> collections. Baltic Beauty is now the leading UK retailer of Baltic Amber Jewellery.</p>",
+            "text_size": 2,
+            "text_style": "font-body"
+          }
+        },
+        "buttons_7BqqFz": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Jewellery",
+            "button_url": "shopify://collections/amber-jewellery",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qLWngK",
+        "text_q3Xxb4",
+        "buttons_7BqqFz"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f",
+    "030e1860-db80-4377-8df2-9d6d28113ecd",
+    "380bdb5c-03ab-4e5d-af5c-10133ae2eba0",
+    "icons",
+    "featured-collection",
+    "image-with-text",
+    "0f214b60-1f99-44d2-9519-1c4e46863174",
+    "rich-text",
+    "258e4c2e-fac2-4077-8da9-cbd0ab68c802",
+    "aef0568c-de5e-4b45-a586-5a710b77dfd1",
+    "11c46f4a-4380-490e-8989-4d1e94ee2f69",
+    "57f0e4af-e054-486c-b12a-e79b15e9471b",
+    "section_rich_text_nbpaDC"
+  ]
+}
