@@ -1,1 +1,263 @@
-{"type":"header","name":"Header","sections":{"17721917652da96c4e":{"type":"_blocks","blocks":{"ai_gen_block_a05cefc_YaJzfi":{"type":"ai_gen_block_a05cefc","settings":{"show_warranty":true,"warranty_text":"1 Year Warranty","show_customers":true,"customers_text":"Trusted by Over 24,000 Customers","show_hypoallergenic":true,"hypoallergenic_text":"Certified Amber","desktop_width_percent":100,"padding_vertical":5,"padding_horizontal":20,"item_spacing":40,"mobile_item_spacing":10,"icon_text_gap":5,"show_dividers":true,"divider_height":25,"divider_color":"#dadada","background_color":"#f2f2f2","text_color":"#212121","icon_color":"#212121","text_size":14,"mobile_text_size":10,"text_weight":"500","icon_size":20,"mobile_icon_size":16,"icon_weight":1.5},"blocks":{}}},"block_order":["ai_gen_block_a05cefc_YaJzfi"],"name":"Trust banner","settings":{}},"announcement":{"type":"announcement","blocks":{"bea82550-d9da-445a-868e-841fa80df2d5":{"type":"message","disabled":true,"settings":{"show_wheel":true,"message":"FRIDAY IS OUR LAST SHIPPING DAY FOR CHRISTMAS","target_url_enabled":false,"target_url":"","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}},"172488fb-76a9-41e3-a522-5e30ff81054a":{"type":"text","disabled":true,"settings":{"text":"<p><a href=\"https:\/\/balticbeauty.co.uk\/pages\/sign-up-for-emails\" title=\"https:\/\/balticbeauty.co.uk\/pages\/sign-up-for-emails\"><strong>SIGN UP FOR 15% OFF YOUR FIRST ORDER <\/strong>→<\/a><\/p>","target_url_enabled":false,"target_url":"https:\/\/balticbeauty.co.uk\/pages\/sign-up-for-emails","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}},"d1b4e42a-36e7-43eb-bfd6-2c605225b2d8":{"type":"text","settings":{"text":"<h6>25% OFF FULL PRICE + FREE £40 EARRINGS <strong>|  25% OFF SALE <br\/>ENDS MIDNIGHT | <\/strong><a href=\"\/collections\/shop-everything\" title=\"Shop Everything\">SHOP NOW <\/a><br\/><\/h6>","target_url_enabled":false,"target_url":"","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}},"b98264b7-6dc3-4afb-ad1d-816269e0c23a":{"type":"text","disabled":true,"settings":{"text":"<p>LIMITED STOCK<\/p>","target_url_enabled":false,"target_url":"","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}},"bac231e4-cd64-4085-8573-feb893894ef1":{"type":"text","disabled":true,"settings":{"text":"<p>◆ CODE: FREE40 ◆<\/p>","target_url_enabled":false,"target_url":"","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}}},"block_order":["bea82550-d9da-445a-868e-841fa80df2d5","172488fb-76a9-41e3-a522-5e30ff81054a","d1b4e42a-36e7-43eb-bfd6-2c605225b2d8","b98264b7-6dc3-4afb-ad1d-816269e0c23a","bac231e4-cd64-4085-8573-feb893894ef1"],"settings":{"layout":"slider","slider_speed":5,"text_alignment":"center","show_arrows":false,"marquee_speed":75,"text_size":1,"bg_color":"#212121","color":"#ffffff"}},"header":{"type":"header","blocks":{"a12113b9-e2bb-4d1b-b388-7a849c0b35a6":{"type":"image","settings":{"position":"4","image":"shopify:\/\/shop_images\/Demi_Pendant.jpg","aspect_ratio":0.6,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"Gift Cards","link_text":"The Gift of Choice direct to your Inbox","link":"shopify:\/\/products\/baltic-beauty-amber-jewellery-gift-card","text_color":""}},"d961292e-0927-45b3-bc97-1f548cb15d63":{"type":"image","settings":{"position":"4","image":"shopify:\/\/shop_images\/bbxmas_website-20_046e5a73-70a9-46b1-a2b8-296c54aa90bc.jpg","aspect_ratio":0.6,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"Most Gifted","link_text":"Shop our Best-Seller Edit","link":"shopify:\/\/collections\/best-sellers","text_color":""}},"92715a56-f953-4a2b-b64f-fc3b2c9615bb":{"type":"image","settings":{"position":"1","image":"shopify:\/\/shop_images\/green-amber-header.jpg","aspect_ratio":0.5,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"Shop by Collection","link_text":"Head to Toe in Nature's Favourite Gem","link":"shopify:\/\/collections","text_color":""}},"04a83f23-8d1a-487b-9860-5028f3386fd5":{"type":"image","settings":{"position":"3","image":"shopify:\/\/shop_images\/DSC09522-Edit.jpg","aspect_ratio":0.7,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"Elements","link_text":"","link":"shopify:\/\/collections\/elements","text_color":""}},"5f77a180-a1a3-46f5-9aa9-814ce3723413":{"type":"image","disabled":true,"settings":{"position":"5","image":"shopify:\/\/shop_images\/Black_Friday_Banner_2_Shock_6e5c2ba7-d6c2-4d1f-9aa5-adf9481616fe.jpg","aspect_ratio":0.7,"wide_image":true,"overlay_opacity":0,"overlay_color":"#000000","title":"SALE","link_text":"","link":"shopify:\/\/collections\/amber-jewellery-sale","text_color":""}}},"block_order":["a12113b9-e2bb-4d1b-b388-7a849c0b35a6","d961292e-0927-45b3-bc97-1f548cb15d63","92715a56-f953-4a2b-b64f-fc3b2c9615bb","04a83f23-8d1a-487b-9860-5028f3386fd5","5f77a180-a1a3-46f5-9aa9-814ce3723413"],"settings":{"header_sticky":true,"header_style":"logo_beside","show_separator_line":false,"separator_opacity":50,"show_icons":true,"icon_as_circle":false,"cart_icon_family":"bag","logo":"shopify:\/\/shop_images\/baltic-beauty-box-logo-2022-FINAL.png","logo_max_limit":205,"logo_max_limit_mobile":130,"main_menu_linklist":"main-menu-header","enable_search":true,"show_social_icons":false,"show_locale_selector":false,"show_currency_selector":false,"type":"currency","highlight_item":"Sale","highlight_item_color":"#d02e2e","transparent_home":false,"transparent_collection":false,"transparent_article":false,"transparent_page":false,"secondary_menu_linklist":"customer-service","tertiary_menu_linklist":"","padding_top":15,"padding_bottom":15}}},"order":["17721917652da96c4e","announcement","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "17721917652da96c4e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a05cefc_YaJzfi": {
+          "type": "ai_gen_block_a05cefc",
+          "settings": {
+            "show_warranty": true,
+            "warranty_text": "1 Year Warranty",
+            "show_customers": true,
+            "customers_text": "Trusted by Over 24,000 Customers",
+            "show_hypoallergenic": true,
+            "hypoallergenic_text": "Certified Amber",
+            "desktop_width_percent": 100,
+            "padding_vertical": 5,
+            "padding_horizontal": 20,
+            "item_spacing": 40,
+            "mobile_item_spacing": 10,
+            "icon_text_gap": 5,
+            "show_dividers": true,
+            "divider_height": 25,
+            "divider_color": "#dadada",
+            "background_color": "#f2f2f2",
+            "text_color": "#212121",
+            "icon_color": "#212121",
+            "text_size": 14,
+            "mobile_text_size": 10,
+            "text_weight": "500",
+            "icon_size": 20,
+            "mobile_icon_size": 16,
+            "icon_weight": 1.5
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a05cefc_YaJzfi"
+      ],
+      "name": "Trust banner",
+      "settings": {}
+    },
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "bea82550-d9da-445a-868e-841fa80df2d5": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "show_wheel": true,
+            "message": "FRIDAY IS OUR LAST SHIPPING DAY FOR CHRISTMAS",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "172488fb-76a9-41e3-a522-5e30ff81054a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><a href=\"https://balticbeauty.co.uk/pages/sign-up-for-emails\" title=\"https://balticbeauty.co.uk/pages/sign-up-for-emails\"><strong>SIGN UP FOR 15% OFF YOUR FIRST ORDER </strong>→</a></p>",
+            "target_url_enabled": false,
+            "target_url": "https://balticbeauty.co.uk/pages/sign-up-for-emails",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "d1b4e42a-36e7-43eb-bfd6-2c605225b2d8": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>FREE £40 EARRINGS<strong> WITH EVERY ORDER  | EXCLUDES SALE </strong><a href=\"/collections/shop-everything\" title=\"Shop Everything\">SHOP NOW </a><br/></h6>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "b98264b7-6dc3-4afb-ad1d-816269e0c23a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>LIMITED STOCK</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "bac231e4-cd64-4085-8573-feb893894ef1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>◆ CODE: FREE40 ◆</p>",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "bea82550-d9da-445a-868e-841fa80df2d5",
+        "172488fb-76a9-41e3-a522-5e30ff81054a",
+        "d1b4e42a-36e7-43eb-bfd6-2c605225b2d8",
+        "b98264b7-6dc3-4afb-ad1d-816269e0c23a",
+        "bac231e4-cd64-4085-8573-feb893894ef1"
+      ],
+      "settings": {
+        "layout": "slider",
+        "slider_speed": 5,
+        "text_alignment": "center",
+        "show_arrows": false,
+        "marquee_speed": 75,
+        "text_size": 1,
+        "bg_color": "#212121",
+        "color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "a12113b9-e2bb-4d1b-b388-7a849c0b35a6": {
+          "type": "image",
+          "settings": {
+            "position": "4",
+            "image": "shopify://shop_images/Demi_Pendant.jpg",
+            "aspect_ratio": 0.6,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Gift Cards",
+            "link_text": "The Gift of Choice direct to your Inbox",
+            "link": "shopify://products/baltic-beauty-amber-jewellery-gift-card",
+            "text_color": ""
+          }
+        },
+        "d961292e-0927-45b3-bc97-1f548cb15d63": {
+          "type": "image",
+          "settings": {
+            "position": "4",
+            "image": "shopify://shop_images/bbxmas_website-20_046e5a73-70a9-46b1-a2b8-296c54aa90bc.jpg",
+            "aspect_ratio": 0.6,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Most Gifted",
+            "link_text": "Shop our Best-Seller Edit",
+            "link": "shopify://collections/best-sellers",
+            "text_color": ""
+          }
+        },
+        "92715a56-f953-4a2b-b64f-fc3b2c9615bb": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/green-amber-header.jpg",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Shop by Collection",
+            "link_text": "Head to Toe in Nature's Favourite Gem",
+            "link": "shopify://collections",
+            "text_color": ""
+          }
+        },
+        "04a83f23-8d1a-487b-9860-5028f3386fd5": {
+          "type": "image",
+          "settings": {
+            "position": "3",
+            "image": "shopify://shop_images/DSC09522-Edit.jpg",
+            "aspect_ratio": 0.7,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Elements",
+            "link_text": "",
+            "link": "shopify://collections/elements",
+            "text_color": ""
+          }
+        },
+        "5f77a180-a1a3-46f5-9aa9-814ce3723413": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "position": "5",
+            "image": "shopify://shop_images/Black_Friday_Banner_2_Shock_6e5c2ba7-d6c2-4d1f-9aa5-adf9481616fe.jpg",
+            "aspect_ratio": 0.7,
+            "wide_image": true,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "SALE",
+            "link_text": "",
+            "link": "shopify://collections/amber-jewellery-sale",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "a12113b9-e2bb-4d1b-b388-7a849c0b35a6",
+        "d961292e-0927-45b3-bc97-1f548cb15d63",
+        "92715a56-f953-4a2b-b64f-fc3b2c9615bb",
+        "04a83f23-8d1a-487b-9860-5028f3386fd5",
+        "5f77a180-a1a3-46f5-9aa9-814ce3723413"
+      ],
+      "settings": {
+        "header_sticky": true,
+        "header_style": "logo_beside",
+        "show_separator_line": false,
+        "separator_opacity": 50,
+        "show_icons": true,
+        "icon_as_circle": false,
+        "cart_icon_family": "bag",
+        "logo": "shopify://shop_images/baltic-beauty-box-logo-2022-FINAL.png",
+        "logo_max_limit": 205,
+        "logo_max_limit_mobile": 130,
+        "main_menu_linklist": "main-menu-header",
+        "enable_search": true,
+        "show_social_icons": false,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "type": "currency",
+        "highlight_item": "Sale",
+        "highlight_item_color": "#d02e2e",
+        "transparent_home": false,
+        "transparent_collection": false,
+        "transparent_article": false,
+        "transparent_page": false,
+        "secondary_menu_linklist": "customer-service",
+        "tertiary_menu_linklist": "",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    }
+  },
+  "order": [
+    "17721917652da96c4e",
+    "announcement",
+    "header"
+  ]
+}
