@@ -13501,6 +13501,12 @@ main-search .input-holder {
   text-align: center;
   background-color: var(--bg);
   filter: brightness(var(--filter-bg));
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
 .product__thumb__link__image {

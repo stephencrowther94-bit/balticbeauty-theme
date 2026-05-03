@@ -109,10 +109,11 @@
                 <div class="product__thumbs__holder" data-thumbs-slider>
                   {%- for media in product.media -%}
                     <div class="product__thumb{% if forloop.first %} is-active{% endif %}" data-thumb-item>
-                      <a
+                      <button
+                        type="button"
                         class="product__thumb__link"
-                        href="{{ media.preview_image.src }}"
                         aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+                        aria-label="{{ 'products.product.media.load_image' | t: index: forloop.index }}"
                         data-media-id="{{ section.id }}-{{ media.id }}"
                         data-thumb-index="{{ forloop.index0 }}"
                         data-thumb-link>
@@ -125,7 +126,7 @@
                             render 'icon-media-model'
                           endif
                         -%}
-                      </a>
+                      </button>
                     </div>
                   {%- endfor -%}
 
