@@ -1,1 +1,127 @@
-{"sections":{"hero":{"type":"collection-image-with-title","settings":{"show_title":true,"show_description":false,"flex_align":"align--middle-right","bg_color":"rgba(0,0,0,0)","color":"","show_image":true,"banner_layout":"inline","height":"two-fifty-height-hero","mobile_height":"two-fifty-height-hero--mobile","overlay_opacity":0,"overlay_color":"#232323","show_overlay_text":false,"padding_top":0,"padding_bottom":0}},"subcollections":{"type":"subcollections","settings":{"subcollection_layout":"carousel","subcollection_description":false,"select_image":"product","color":"#ffffff","bg_color":"","padding_top":0,"padding_bottom":0}},"main":{"type":"collection","settings":{"enable_sort":true,"enable_filters":true,"filter_layout":"inline-open","collection_linklist":"","grid":4,"grid_mobile":"2","product_limit":28,"padding_top":0,"padding_bottom":15}},"16438392255e237889":{"type":"section-recent-products","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":6,"product_recently_minimum":2,"bg_color":"#ffffff","color":"","padding_top":0,"padding_bottom":0}},"1664644351115fa10e":{"type":"text-promo","blocks":{"1664644351def2eabc-2":{"type":"button","settings":{"button_text":"Shop All","button_url":"shopify:\/\/collections\/amber-jewellery","button_type":"btn--white","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["1664644351def2eabc-2"],"settings":{"width":"wrapper--full-padded","border":false,"bg_color":"","color":"","image":"shopify:\/\/shop_images\/Spring-Amber-Jewellery-Sets-2.jpg","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"padding_top":60,"padding_bottom":0}}},"order":["hero","subcollections","main","16438392255e237889","1664644351115fa10e"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": true,
+        "show_description": false,
+        "flex_align": "align--middle-right",
+        "bg_color": "rgba(0,0,0,0)",
+        "color": "",
+        "show_image": true,
+        "banner_layout": "inline",
+        "height": "two-fifty-height-hero",
+        "mobile_height": "two-fifty-height-hero--mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#232323",
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "settings": {
+        "subcollection_layout": "carousel",
+        "subcollection_description": false,
+        "select_image": "product",
+        "color": "#ffffff",
+        "bg_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "collection",
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "inline-open",
+        "collection_linklist": "",
+        "grid": 4,
+        "grid_mobile": "2",
+        "product_limit": 28,
+        "padding_top": 0,
+        "padding_bottom": 15
+      }
+    },
+    "16438392255e237889": {
+      "type": "section-recent-products",
+      "settings": {
+        "product_recently_heading": "Recently viewed",
+        "product_recently_limit": 6,
+        "product_recently_minimum": 2,
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1664644351115fa10e": {
+      "type": "text-promo",
+      "blocks": {
+        "1664644351def2eabc-2": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop All",
+            "button_url": "shopify://collections/amber-jewellery",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "1664644351def2eabc-2"
+      ],
+      "settings": {
+        "width": "wrapper--full-padded",
+        "border": false,
+        "bg_color": "",
+        "color": "",
+        "image": "shopify://shop_images/Spring-Amber-Jewellery-Sets-2.jpg",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_description_EcFaBw": {
+      "type": "section-collection-description",
+      "name": "Collection description",
+      "settings": {
+        "show_description": true,
+        "heading": "",
+        "heading_tag": "h2",
+        "heading_size": 6,
+        "width": "wrapper",
+        "align_text": "text-left",
+        "text_size": 4,
+        "text_style": "font-body",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "main",
+    "16438392255e237889",
+    "1664644351115fa10e",
+    "section_collection_description_EcFaBw"
+  ]
+}
