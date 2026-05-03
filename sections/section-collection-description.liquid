@@ -3,47 +3,52 @@
   assign bg_color = section.settings.bg_color
   assign text_color = section.settings.color
   assign animation_anchor = '#CollectionDescription--' | append: section.id
-  assign show_description = section.settings.show_description
   assign description = collection.description
+  assign show_description = section.settings.show_description
 
   if description == blank
     assign show_description = false
   endif
+
+  assign render_section = show_description
+  if render_section == false and request.design_mode
+    assign render_section = true
+  endif
 -%}
 
-{%- style -%}
-  #CollectionDescription--{{ section.id }} {
-    --PT: {{ section.settings.padding_top }}px;
-    --PB: {{ section.settings.padding_bottom }}px;
+{%- if render_section -%}
+  {%- style -%}
+    #CollectionDescription--{{ section.id }} {
+      --PT: {{ section.settings.padding_top }}px;
+      --PB: {{ section.settings.padding_bottom }}px;
 
-    {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
-      --bg: {{ bg_color }};
-    {%- endunless -%}
+      {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
+        --bg: {{ bg_color }};
+      {%- endunless -%}
 
-    {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
-      --text: {{ text_color }};
-    {%- endunless -%}
-  }
-{%- endstyle -%}
+      {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+        --text: {{ text_color }};
+      {%- endunless -%}
+    }
+  {%- endstyle -%}
 
-<section id="CollectionDescription--{{ section.id }}"
-  class="index-rte section-padding"
-  data-section-id="{{ section.id }}"
-  data-section-type="collection-description">
-  {%- if show_description or section.settings.heading != blank -%}
+  <section id="CollectionDescription--{{ section.id }}"
+    class="index-rte section-padding"
+    data-section-id="{{ section.id }}"
+    data-section-type="collection-description">
     <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
       <div class="hero__content hero__content--compact">
-        {%- if section.settings.heading != blank -%}
-          {%- assign heading_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
-          <{{ section.settings.heading_tag }} class="hero__title {{ heading_size_class }}"
-            data-aos="hero"
-            data-aos-anchor="{{ animation_anchor }}"
-            data-aos-order="1">
-            {{ section.settings.heading }}
-          </{{ section.settings.heading_tag }}>
-        {%- endif -%}
-
         {%- if show_description -%}
+          {%- if section.settings.heading != blank -%}
+            {%- assign heading_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
+            <{{ section.settings.heading_tag }} class="hero__title {{ heading_size_class }}"
+              data-aos="hero"
+              data-aos-anchor="{{ animation_anchor }}"
+              data-aos-order="1">
+              {{ section.settings.heading }}
+            </{{ section.settings.heading_tag }}>
+          {%- endif -%}
+
           {%- assign body_size_class = section.settings.text_size | prepend: 'body-size-' -%}
           <div class="hero__rte rte {{ body_size_class }} {{ section.settings.text_style }}"
             data-aos="hero"
@@ -51,21 +56,15 @@
             data-aos-order="2">
             {{ description }}
           </div>
+        {%- else -%}
+          <p class="hero__rte rte body-size-3" style="opacity:0.6;">
+            {{ 'sections.collection_description.placeholder' | t | default: 'Collection description will appear here once a description is added to this collection in Shopify admin (Collections → [collection] → Description). This placeholder is only visible in the customizer.' }}
+          </p>
         {%- endif -%}
       </div>
     </div>
-  {%- else -%}
-    {%- if request.design_mode -%}
-      <div class="hero__content__wrapper {{ section.settings.width }}">
-        <div class="hero__content hero__content--compact">
-          <p class="hero__rte rte body-size-3" style="opacity:0.6;">
-            {{ 'sections.collection_description.placeholder' | t | default: 'Collection description will appear here. Add a description to this collection in Shopify admin, or enable “Show collection description”.' }}
-          </p>
-        </div>
-      </div>
-    {%- endif -%}
-  {%- endif -%}
-</section>
+  </section>
+{%- endif -%}
 
 {% schema %}
 {
