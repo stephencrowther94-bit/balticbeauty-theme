@@ -30,6 +30,21 @@
         --text: {{ text_color }};
       {%- endunless -%}
     }
+
+    #CollectionDescription--{{ section.id }} .hero__title,
+    #CollectionDescription--{{ section.id }} .hero__rte h2,
+    #CollectionDescription--{{ section.id }} .hero__rte h3,
+    #CollectionDescription--{{ section.id }} .hero__rte h4 {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+
+    #CollectionDescription--{{ section.id }} .hero__rte,
+    #CollectionDescription--{{ section.id }} .hero__rte p,
+    #CollectionDescription--{{ section.id }} .hero__rte li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
   {%- endstyle -%}
 
   <section id="CollectionDescription--{{ section.id }}"
@@ -40,8 +55,7 @@
       <div class="hero__content hero__content--compact">
         {%- if show_description -%}
           {%- if section.settings.heading != blank -%}
-            {%- assign heading_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
-            <{{ section.settings.heading_tag }} class="hero__title {{ heading_size_class }}"
+            <{{ section.settings.heading_tag }} class="hero__title"
               data-aos="hero"
               data-aos-anchor="{{ animation_anchor }}"
               data-aos-order="1">
@@ -49,15 +63,14 @@
             </{{ section.settings.heading_tag }}>
           {%- endif -%}
 
-          {%- assign body_size_class = section.settings.text_size | prepend: 'body-size-' -%}
-          <div class="hero__rte rte {{ body_size_class }} {{ section.settings.text_style }}"
+          <div class="hero__rte rte {{ section.settings.text_style }}"
             data-aos="hero"
             data-aos-anchor="{{ animation_anchor }}"
             data-aos-order="2">
             {{ description }}
           </div>
         {%- else -%}
-          <p class="hero__rte rte body-size-3" style="opacity:0.6;">
+          <p class="hero__rte rte" style="opacity:0.6;">
             {{ 'sections.collection_description.placeholder' | t | default: 'Collection description will appear here once a description is added to this collection in Shopify admin (Collections → [collection] → Description). This placeholder is only visible in the customizer.' }}
           </p>
         {%- endif -%}
@@ -105,17 +118,12 @@
       ]
     },
     {
-      "type": "range",
-      "id": "heading_size",
-      "label": "Heading size",
-      "min": 1,
-      "max": 15,
-      "step": 1,
-      "default": 6
-    },
-    {
       "type": "header",
       "content": "Style"
+    },
+    {
+      "type": "paragraph",
+      "content": "Heading is fixed at 24px and body copy at 14px for this section."
     },
     {
       "type": "select",
@@ -137,15 +145,6 @@
         {"value": "text-left","label": "Left"},
         {"value": "text-center","label": "Centered"}
       ]
-    },
-    {
-      "type": "range",
-      "id": "text_size",
-      "label": "Body text size",
-      "min": 1,
-      "max": 15,
-      "step": 1,
-      "default": 4
     },
     {
       "type": "select",
