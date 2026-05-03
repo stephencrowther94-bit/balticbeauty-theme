@@ -70,7 +70,6 @@
 {% schema %}
 {
   "name": "Collection description",
-  "templates": ["collection"],
   "settings": [
     {
       "type": "paragraph",
@@ -201,11 +200,11 @@
   "presets": [
     {
       "name": "Collection description",
-      "category": "Text"
+      "category": "Collection"
     }
   ],
-  "disabled_on": {
-    "groups": ["header", "aside", "footer"]
+  "enabled_on": {
+    "templates": ["collection"]
   }
 }
 {% endschema %}
