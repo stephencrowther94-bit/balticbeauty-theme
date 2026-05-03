@@ -1,0 +1,211 @@
+<!-- /sections/section-collection-description.liquid -->
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.color
+  assign animation_anchor = '#CollectionDescription--' | append: section.id
+  assign show_description = section.settings.show_description
+  assign description = collection.description
+
+  if description == blank
+    assign show_description = false
+  endif
+-%}
+
+{%- style -%}
+  #CollectionDescription--{{ section.id }} {
+    --PT: {{ section.settings.padding_top }}px;
+    --PB: {{ section.settings.padding_bottom }}px;
+
+    {%- unless bg_color == 'rgba(0,0,0,0)' or bg_color == blank -%}
+      --bg: {{ bg_color }};
+    {%- endunless -%}
+
+    {%- unless text_color == 'rgba(0,0,0,0)' or text_color == blank -%}
+      --text: {{ text_color }};
+    {%- endunless -%}
+  }
+{%- endstyle -%}
+
+<section id="CollectionDescription--{{ section.id }}"
+  class="index-rte section-padding"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-description">
+  {%- if show_description or section.settings.heading != blank -%}
+    <div class="hero__content__wrapper {{ section.settings.align_text }} {{ section.settings.width }}">
+      <div class="hero__content hero__content--compact">
+        {%- if section.settings.heading != blank -%}
+          {%- assign heading_size_class = section.settings.heading_size | prepend: 'heading-size-' -%}
+          <{{ section.settings.heading_tag }} class="hero__title {{ heading_size_class }}"
+            data-aos="hero"
+            data-aos-anchor="{{ animation_anchor }}"
+            data-aos-order="1">
+            {{ section.settings.heading }}
+          </{{ section.settings.heading_tag }}>
+        {%- endif -%}
+
+        {%- if show_description -%}
+          {%- assign body_size_class = section.settings.text_size | prepend: 'body-size-' -%}
+          <div class="hero__rte rte {{ body_size_class }} {{ section.settings.text_style }}"
+            data-aos="hero"
+            data-aos-anchor="{{ animation_anchor }}"
+            data-aos-order="2">
+            {{ description }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- else -%}
+    {%- if request.design_mode -%}
+      <div class="hero__content__wrapper {{ section.settings.width }}">
+        <div class="hero__content hero__content--compact">
+          <p class="hero__rte rte body-size-3" style="opacity:0.6;">
+            {{ 'sections.collection_description.placeholder' | t | default: 'Collection description will appear here. Add a description to this collection in Shopify admin, or enable “Show collection description”.' }}
+          </p>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Collection description",
+  "templates": ["collection"],
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Renders the description from the current collection (Shopify admin → Collections → [collection] → Description). Useful at the bottom of the collection page for SEO."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show collection description",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Static heading shown above the description.",
+      "default": "About this collection"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "info": "Use h2 on collection pages so the document outline doesn't skip levels under the page H1.",
+      "default": "h2",
+      "options": [
+        {"value": "h2", "label": "h2"},
+        {"value": "h3", "label": "h3"},
+        {"value": "h4", "label": "h4"},
+        {"value": "p", "label": "Paragraph (no heading)"}
+      ]
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper",
+      "options": [
+        {"value": "wrapper--full-padded", "label": "Full width padded"},
+        {"value": "wrapper", "label": "Normal"},
+        {"value": "wrapper--narrow", "label": "Narrow"}
+      ]
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "text-left",
+      "options": [
+        {"value": "text-left","label": "Left"},
+        {"value": "text-center","label": "Centered"}
+      ]
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Body text size",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "text_style",
+      "label": "Body text style",
+      "default": "font-body",
+      "options": [
+        {"value": "font-heading", "label": "Heading"},
+        {"value": "font-body", "label": "Body"}
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection description",
+      "category": "Text"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "aside", "footer"]
+  }
+}
+{% endschema %}
