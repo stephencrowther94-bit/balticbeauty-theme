@@ -23992,10 +23992,12 @@ product-siblings {
     margin-top: 12px;
     background: var(--bg-accent);
     padding: 10px;
-}.minicart-item-giftpack h6.minicart-item-giftpack-title {
-    font-size: 1em;
-    margin: 0;
-  font-size: 0.9em;
+}.minicart-item-giftpack .minicart-item-giftpack-title {
+    font-size: max(
+      1rem * var(--FONT-ADJUST-BODY),
+      12px * var(--FONT-ADJUST-BODY)
+    );
+    line-height: 1.35;
     margin: 0;
     font-family: var(--FONT-STACK-BODY);
     font-weight: var(--FONT-WEIGHT-BODY);
