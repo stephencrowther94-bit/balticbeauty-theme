@@ -1,1 +1,538 @@
-{"sections":{"main":{"type":"product","blocks":{"f6fdbab3-808b-4158-8585-8d1e33238b89":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"contentSize":14,"pattern":"","hideText":false,"alignment":"","layout":"","textColor":"","starColor":"","showAllReviews":true,"looxOpenFloatingWidget":false,"emptyRatingWidget":false}},"7040060e-9434-4489-a1e5-ca0c012ce883":{"type":"title","settings":{"subheading_option":"none","show_rating":false,"enable_star_rating":false,"show_rating_count":false,"padding_bottom":8}},"1b2a63ca-6ff5-493a-8243-d4c128cddf71":{"type":"price","settings":{"padding_bottom":16}},"5612feec-1d9e-447d-ac04-a8505db042c2":{"type":"inventory_countdown","settings":{"show_notice":"always","max_inventory":10,"hide_inventory_counter":false,"padding_bottom":16}},"7b54780b-2e9b-4174-ae93-4d35a1294213":{"type":"variants","settings":{"info_page":"","subscriptions_enable_selectors":false,"padding_bottom":20}},"c9fefc21-8680-42e7-b1dc-97b091f8eb57":{"type":"divider","settings":{"show_line":true,"padding_top":20,"padding_bottom":20}},"b4de96ce-8f76-4a7e-80e0-309b9452efe7":{"type":"shopify:\/\/apps\/textbox-by-textify\/blocks\/app-block\/b5626f69-87af-4a23-ada4-1674452f85d0","settings":{"featured_product":"{{product}}"}},"06e6d975-0f5c-4c52-aef1-1f16cd68756a":{"type":"divider","settings":{"show_line":true,"padding_top":0,"padding_bottom":20}},"d708aa76-06d7-40a4-88ee-b26d4a83435c":{"type":"upsell","disabled":true,"settings":{"upsell_product":"","bg_color":"","padding_bottom":16}},"b644ba7b-c496-46bc-8941-f4b70bb45722":{"type":"buttons","settings":{"show_quantity":false,"show_payment_button":true,"show_gift_card_recipient":false,"padding_bottom":16}},"d733eeef-69f4-408c-ab9e-bef89b9bc0ac":{"type":"shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e","settings":{"data_key":"credit-promotion-auto-size","theme":"light","topPadding":"0","bottomPadding":"10","messagePrefix":""}},"delivery_date_RgJqAJ":{"type":"delivery_date","settings":{"cutoff_hour":13,"uk_min_days":1,"uk_max_days":2,"eu_min_days":3,"eu_max_days":5,"row_min_days":5,"row_max_days":10,"blocked_dates":"","accent_color":"#4a8c3f","padding_bottom":16}},"cb120ba5-4d16-4b55-a912-7b8722bf2f45":{"type":"divider","settings":{"show_line":true,"padding_top":8,"padding_bottom":16}},"99e5f742-c332-4cd7-9a5f-61357b38085b":{"type":"icon","settings":{"icon_name":"icon-star","icon_size":20,"icon_color":"#545454","title":"Certified Baltic Amber & 925 Sterling Silver","width":"full","padding_bottom":16}},"e19053b5-3814-4e48-a2ad-d6bd84ea3bf3":{"type":"icon","settings":{"icon_name":"icon-heart","icon_size":20,"icon_color":"#545454","title":"Designed in the UK, Handcrafted in Poland","width":"full","padding_bottom":16}},"342bf8d6-5e62-45f2-95d6-992022829cf9":{"type":"icon","settings":{"icon_name":"icon-fast-shipment","icon_size":20,"icon_color":"#545454","title":"Shipped Worldwide","width":"full","padding_bottom":16}},"6be20fd7-1c1a-4b7e-98b6-76c2801097f4":{"type":"icon","settings":{"icon_name":"icon-shield","icon_size":20,"icon_color":"#545454","title":"1 Year Warranty","width":"full","padding_bottom":16}},"tabs":{"type":"tab_richtext","settings":{"show_read_more":true,"style":"accordions","title_1":"Luxury Gift Wrap","raw_content_1":"<p>All of our jewellery is polished and boxed in our beautiful signature jewellery boxes as standard.<\/p><p><strong>Luxury Gift Wrap available. Includes:<\/strong><em> <\/em>Signature BB Wrapping Paper, Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<br\/><br\/><strong>Luxury Gift Bag available. Includes:<\/strong> Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<\/p><p>Gift note only available with gift wrap and bag. Just leave us a note in the cart with your message.<\/p>","title_2":"Responsibly Handcrafted","raw_content_2":"<p>We work with a number of family-run International Amber Association recommended workshops across Poland that are home to the talented artisans that handcraft each and every element of our pieces.<\/p>","title_3":"","raw_content_3":"","title_4":"Delivery & Returns","raw_content_4":"<h6><strong>UK Royal Mail (Free over £50)<\/strong><\/h6><p>48 Tracked: 2 working days | £2.95<br\/>24 Tracked: 1 working day | £3.95<br\/>Next Day Delivery Guaranteed (order by 2pm) | £6.50<\/p><h6><strong>Europe (Free delivery over £150)<\/strong><\/h6><p>Standard Tracked: 3-7 Working Days | £5.95<br\/>Express Europe Shipping available<\/p><h6><strong>International Orders (Free over £150)<\/strong><\/h6><p>Standard Tracked: 5-12 Working Days | £7.50<br\/>Express International Shipping available<\/p>","title_5":"","raw_content_5":"","padding_bottom":20}},"35714367-2845-48e9-82ce-ba1cfa9df260":{"type":"complementary-products","settings":{"bg_color":"#f9f9f9","padding_bottom":16}},"ee03b18e-6507-41fb-8aa8-1c120e3355e2":{"type":"code","settings":{"code":"<body><klarna-placement\n    data-key=\"credit-promotion-auto-size\"\n    data-locale=\"en-GB”\n    data-purchase-amount=\"12000\"\n><\/klarna-placement><\/body>","padding_bottom":0}},"3cd9b62a-3786-4c88-8c60-a94d0dfa06dc":{"type":"code","settings":{"code":"<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}\/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}\/cart\/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n<\/script>","padding_bottom":0}}},"block_order":["f6fdbab3-808b-4158-8585-8d1e33238b89","7040060e-9434-4489-a1e5-ca0c012ce883","1b2a63ca-6ff5-493a-8243-d4c128cddf71","5612feec-1d9e-447d-ac04-a8505db042c2","7b54780b-2e9b-4174-ae93-4d35a1294213","c9fefc21-8680-42e7-b1dc-97b091f8eb57","b4de96ce-8f76-4a7e-80e0-309b9452efe7","06e6d975-0f5c-4c52-aef1-1f16cd68756a","d708aa76-06d7-40a4-88ee-b26d4a83435c","b644ba7b-c496-46bc-8941-f4b70bb45722","d733eeef-69f4-408c-ab9e-bef89b9bc0ac","delivery_date_RgJqAJ","cb120ba5-4d16-4b55-a912-7b8722bf2f45","99e5f742-c332-4cd7-9a5f-61357b38085b","e19053b5-3814-4e48-a2ad-d6bd84ea3bf3","342bf8d6-5e62-45f2-95d6-992022829cf9","6be20fd7-1c1a-4b7e-98b6-76c2801097f4","tabs","35714367-2845-48e9-82ce-ba1cfa9df260","ee03b18e-6507-41fb-8aa8-1c120e3355e2","3cd9b62a-3786-4c88-8c60-a94d0dfa06dc"],"settings":{"product_sticky_enable":true,"image_layout":"stacked","image_size":"normal","show_cart_bar":true,"enable_zoom":true,"enable_video_looping":true,"mobile_image_style":"thumbs","padding_top":24,"padding_bottom":30}},"e9ae3c27-41b3-43e1-872e-4dc7004defde":{"type":"section-rich-text","blocks":{"template--16871127220462__e9ae3c27-41b3-43e1-872e-4dc7004defde-heading-1":{"type":"heading","settings":{"title":"We are 1 of the 2 Certified Genuine Baltic Amber UK retailers.","text_size":7}}},"block_order":["template--16871127220462__e9ae3c27-41b3-43e1-872e-4dc7004defde-heading-1"],"settings":{"width":"wrapper--narrow","align_text":"text-center","bg_color":"#f2f2f2","color":"","padding_top":80,"padding_bottom":80}},"16883234798ca85e86":{"type":"apps","blocks":{"1281ba8e-7d76-49ef-a2f2-dfc9dd766217":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"reviews_to_display":"","default_tab":"automatic","only_photos":false,"aggregated":true,"limit":5,"hide_thumbnails":false,"maxwidth":1080,"is_sample":true}}},"block_order":["1281ba8e-7d76-49ef-a2f2-dfc9dd766217"],"settings":{"include_margins":false}},"imgtxt":{"type":"section-custom-content","blocks":{"imgtxt-0":{"type":"text","settings":{"subheading":"","subheading_size":3,"title":"Certified Amber Jewellery","heading_size":7,"text":"<p>We are 1 of 2 UK Recommended Sellers of Amber Jewellery by the International Amber Association (IAA). We commit to offering a guarantee of authenticity for all our amber jewellery, and we comply with all Hallmarking regulations.<\/p>","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"#f2f2f2","color":""}},"imgtxt-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/certificate_desk_pic.jpg","overlay_opacity":5,"overlay_color":"#000000","show_overlay_text":false,"title":"","heading_size":7,"description":"","text_size":3,"flex_align":"align--middle-center","bg_color":"","color":"#ffffff","link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"hero__btn btn btn--large btn--outline caps","show_arrow":false}}},"block_order":["imgtxt-0","imgtxt-1"],"settings":{"height":"screen-height-one-half","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full","borders":false,"reverse_blocks":false,"padding_top":0,"padding_bottom":0}},"custom":{"type":"section-custom-content","blocks":{"custom-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Baltic_Beauty_jesien_2021_2_of_4.jpg","overlay_opacity":0,"overlay_color":"#000000","show_overlay_text":false,"title":"","heading_size":7,"description":"","text_size":3,"flex_align":"align--middle-center","bg_color":"","color":"#ffffff","link_text":"","link":"","button_type":"btn--primary","button_size":"btn--small","button_style":"hero__btn btn btn--large btn--outline caps","show_arrow":false}},"custom-1":{"type":"text","settings":{"subheading":"","subheading_size":3,"title":"History of Baltic Amber","heading_size":7,"text":"<p>A fossilised tree resin dating back around 40-60 million years. Found along the shores of the Baltic Sea, this is nature's original gemstone. <\/p>","text_size":3,"button_text":"","button_url":"shopify:\/\/pages\/about-baltic-amber","button_type":"btn--primary","button_size":"","button_style":"caps--large","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"#ffffff","color":""}}},"block_order":["custom-0","custom-1"],"settings":{"height":"screen-height-one-third","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full","borders":false,"reverse_blocks":false,"padding_top":0,"padding_bottom":0}},"1647116645b4b2a92e":{"type":"section-text-row","blocks":{"bfb11ad1-6452-43f4-ad7a-538180e0127a":{"type":"icon","settings":{"icon_name":"icon-star","icon_size":25,"icon_color":"#545454","title":"5 Stars on TrustPilot","heading_size":5,"text":"<p>Over 1500 5 Stars on <a href=\"https:\/\/www.trustpilot.com\/review\/balticbeauty.co.uk\" target=\"_blank\" title=\"https:\/\/www.trustpilot.com\/review\/balticbeauty.co.uk\">TrustPilot,<\/a> Google, Etsy and Amazon. Shop with confidence.<\/p>","text_size":3}},"2aadded9-411d-4c63-b407-ae230bb5a487":{"type":"icon","settings":{"icon_name":"icon-truck","icon_size":25,"icon_color":"#545454","title":"Fast Delivery","heading_size":5,"text":"<p>Next day delivery available, and same day dispatch before 2pm.<\/p>","text_size":3}},"70572bbf-8db5-4b6a-97e0-84218a240788":{"type":"icon","settings":{"icon_name":"icon-heart","icon_size":25,"icon_color":"#545454","title":"1 Year Warranty","heading_size":5,"text":"<p>Whether you want your ring resized or jewellery cleaned, we'll repair and refresh it free of charge.<\/p>","text_size":3}}},"block_order":["bfb11ad1-6452-43f4-ad7a-538180e0127a","2aadded9-411d-4c63-b407-ae230bb5a487","70572bbf-8db5-4b6a-97e0-84218a240788"],"settings":{"title":"","heading_size":5,"align_text":"text-left","icon_alignment":"icon--top","align_columns":"flex-align-top","width":"wrapper--full-padded","bg_color":"#f7f7f7","color":"","padding_top":60,"padding_bottom":60,"layout_mobile":"grid"}},"related":{"type":"related","blocks":{"6dc11fc6-7853-4170-bfe0-e89db5936951":{"type":"related","settings":{"product_recommendations_heading":"Bought together","limit":6}},"db0cf21a-2a2f-48fd-b7a7-fed8f59c013b":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":6}}},"block_order":["6dc11fc6-7853-4170-bfe0-e89db5936951","db0cf21a-2a2f-48fd-b7a7-fed8f59c013b"],"settings":{"enable_tabs":true,"bg_color":"#fdfdfd","color":"","border_color":"","padding_top":60,"padding_bottom":60}},"reviews":{"type":"reviews","settings":{"enable_product_reviews":false,"enable_accordion":true,"width":"wrapper","padding_top":0,"padding_bottom":30}}},"order":["main","e9ae3c27-41b3-43e1-872e-4dc7004defde","16883234798ca85e86","imgtxt","custom","1647116645b4b2a92e","related","reviews"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "f6fdbab3-808b-4158-8585-8d1e33238b89": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 14,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": true,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "7040060e-9434-4489-a1e5-ca0c012ce883": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "show_rating": false,
+            "enable_star_rating": false,
+            "show_rating_count": false,
+            "padding_bottom": 8
+          }
+        },
+        "1b2a63ca-6ff5-493a-8243-d4c128cddf71": {
+          "type": "price",
+          "settings": {
+            "show_installments": false,
+            "padding_bottom": 16
+          }
+        },
+        "5612feec-1d9e-447d-ac04-a8505db042c2": {
+          "type": "inventory_countdown",
+          "settings": {
+            "show_notice": "always",
+            "max_inventory": 10,
+            "hide_inventory_counter": false,
+            "padding_bottom": 16
+          }
+        },
+        "7b54780b-2e9b-4174-ae93-4d35a1294213": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 20
+          }
+        },
+        "c9fefc21-8680-42e7-b1dc-97b091f8eb57": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 20,
+            "padding_bottom": 20
+          }
+        },
+        "b4de96ce-8f76-4a7e-80e0-309b9452efe7": {
+          "type": "shopify://apps/textbox-by-textify/blocks/app-block/b5626f69-87af-4a23-ada4-1674452f85d0",
+          "settings": {
+            "featured_product": "{{product}}"
+          }
+        },
+        "06e6d975-0f5c-4c52-aef1-1f16cd68756a": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 0,
+            "padding_bottom": 20
+          }
+        },
+        "d708aa76-06d7-40a4-88ee-b26d4a83435c": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "upsell_product": "",
+            "bg_color": "",
+            "padding_bottom": 16
+          }
+        },
+        "b644ba7b-c496-46bc-8941-f4b70bb45722": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "show_payment_button": true,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 16
+          }
+        },
+        "d733eeef-69f4-408c-ab9e-bef89b9bc0ac": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-auto-size",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "10",
+            "messagePrefix": ""
+          }
+        },
+        "delivery_date_RgJqAJ": {
+          "type": "delivery_date",
+          "settings": {
+            "cutoff_hour": 13,
+            "uk_min_days": 1,
+            "uk_max_days": 2,
+            "eu_min_days": 3,
+            "eu_max_days": 5,
+            "row_min_days": 5,
+            "row_max_days": 10,
+            "blocked_dates": "",
+            "accent_color": "#4a8c3f",
+            "padding_bottom": 16
+          }
+        },
+        "cb120ba5-4d16-4b55-a912-7b8722bf2f45": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 8,
+            "padding_bottom": 16
+          }
+        },
+        "99e5f742-c332-4cd7-9a5f-61357b38085b": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Certified Baltic Amber & 925 Sterling Silver",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "e19053b5-3814-4e48-a2ad-d6bd84ea3bf3": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Designed in the UK, Handcrafted in Poland",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "342bf8d6-5e62-45f2-95d6-992022829cf9": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-fast-shipment",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Shipped Worldwide",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "6be20fd7-1c1a-4b7e-98b6-76c2801097f4": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "1 Year Warranty",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": true,
+            "style": "accordions",
+            "title_1": "Luxury Gift Wrap",
+            "raw_content_1": "<p>All of our jewellery is polished and boxed in our beautiful signature jewellery boxes as standard.</p><p><strong>Luxury Gift Wrap available. Includes:</strong><em> </em>Signature BB Wrapping Paper, Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<br/><br/><strong>Luxury Gift Bag available. Includes:</strong> Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.</p><p>Gift note only available with gift wrap and bag. Just leave us a note in the cart with your message.</p>",
+            "title_2": "Responsibly Handcrafted",
+            "raw_content_2": "<p>We work with a number of family-run International Amber Association recommended workshops across Poland that are home to the talented artisans that handcraft each and every element of our pieces.</p>",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "Delivery & Returns",
+            "raw_content_4": "<h6><strong>UK Royal Mail (Free over £50)</strong></h6><p>48 Tracked: 2 working days | £2.95<br/>24 Tracked: 1 working day | £3.95<br/>Next Day Delivery Guaranteed (order by 2pm) | £6.50</p><h6><strong>Europe (Free delivery over £150)</strong></h6><p>Standard Tracked: 3-7 Working Days | £5.95<br/>Express Europe Shipping available</p><h6><strong>International Orders (Free over £150)</strong></h6><p>Standard Tracked: 5-12 Working Days | £7.50<br/>Express International Shipping available</p>",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "35714367-2845-48e9-82ce-ba1cfa9df260": {
+          "type": "complementary-products",
+          "settings": {
+            "bg_color": "#f9f9f9",
+            "padding_bottom": 16
+          }
+        },
+        "ee03b18e-6507-41fb-8aa8-1c120e3355e2": {
+          "type": "code",
+          "settings": {
+            "code": "<body><klarna-placement\n    data-key=\"credit-promotion-auto-size\"\n    data-locale=\"en-GB”\n    data-purchase-amount=\"12000\"\n></klarna-placement></body>",
+            "padding_bottom": 0
+          }
+        },
+        "3cd9b62a-3786-4c88-8c60-a94d0dfa06dc": {
+          "type": "code",
+          "settings": {
+            "code": "<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}/cart/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='/cart/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n</script>",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "f6fdbab3-808b-4158-8585-8d1e33238b89",
+        "7040060e-9434-4489-a1e5-ca0c012ce883",
+        "1b2a63ca-6ff5-493a-8243-d4c128cddf71",
+        "5612feec-1d9e-447d-ac04-a8505db042c2",
+        "7b54780b-2e9b-4174-ae93-4d35a1294213",
+        "c9fefc21-8680-42e7-b1dc-97b091f8eb57",
+        "b4de96ce-8f76-4a7e-80e0-309b9452efe7",
+        "06e6d975-0f5c-4c52-aef1-1f16cd68756a",
+        "d708aa76-06d7-40a4-88ee-b26d4a83435c",
+        "b644ba7b-c496-46bc-8941-f4b70bb45722",
+        "d733eeef-69f4-408c-ab9e-bef89b9bc0ac",
+        "delivery_date_RgJqAJ",
+        "cb120ba5-4d16-4b55-a912-7b8722bf2f45",
+        "99e5f742-c332-4cd7-9a5f-61357b38085b",
+        "e19053b5-3814-4e48-a2ad-d6bd84ea3bf3",
+        "342bf8d6-5e62-45f2-95d6-992022829cf9",
+        "6be20fd7-1c1a-4b7e-98b6-76c2801097f4",
+        "tabs",
+        "35714367-2845-48e9-82ce-ba1cfa9df260",
+        "ee03b18e-6507-41fb-8aa8-1c120e3355e2",
+        "3cd9b62a-3786-4c88-8c60-a94d0dfa06dc"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "stacked",
+        "image_size": "normal",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_style": "thumbs",
+        "padding_top": 24,
+        "padding_bottom": 30
+      }
+    },
+    "e9ae3c27-41b3-43e1-872e-4dc7004defde": {
+      "type": "section-rich-text",
+      "blocks": {
+        "template--16871127220462__e9ae3c27-41b3-43e1-872e-4dc7004defde-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "We are 1 of the 2 Certified Genuine Baltic Amber UK retailers.",
+            "text_size": 7
+          }
+        }
+      },
+      "block_order": [
+        "template--16871127220462__e9ae3c27-41b3-43e1-872e-4dc7004defde-heading-1"
+      ],
+      "settings": {
+        "width": "wrapper--narrow",
+        "align_text": "text-center",
+        "bg_color": "#f2f2f2",
+        "color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "16883234798ca85e86": {
+      "type": "apps",
+      "blocks": {
+        "1281ba8e-7d76-49ef-a2f2-dfc9dd766217": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 5,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "1281ba8e-7d76-49ef-a2f2-dfc9dd766217"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "imgtxt": {
+      "type": "section-custom-content",
+      "blocks": {
+        "imgtxt-0": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "Certified Amber Jewellery",
+            "heading_size": 7,
+            "text": "<p>We are 1 of 2 UK Recommended Sellers of Amber Jewellery by the International Amber Association (IAA). We commit to offering a guarantee of authenticity for all our amber jewellery, and we comply with all Hallmarking regulations.</p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f2f2f2",
+            "color": ""
+          }
+        },
+        "imgtxt-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/certificate_desk_pic.jpg",
+            "overlay_opacity": 5,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "hero__btn btn btn--large btn--outline caps",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "imgtxt-0",
+        "imgtxt-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom": {
+      "type": "section-custom-content",
+      "blocks": {
+        "custom-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Baltic_Beauty_jesien_2021_2_of_4.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "hero__btn btn btn--large btn--outline caps",
+            "show_arrow": false
+          }
+        },
+        "custom-1": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "History of Baltic Amber",
+            "heading_size": 7,
+            "text": "<p>A fossilised tree resin dating back around 40-60 million years. Found along the shores of the Baltic Sea, this is nature's original gemstone. </p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "shopify://pages/about-baltic-amber",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "caps--large",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#ffffff",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom-0",
+        "custom-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-third",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1647116645b4b2a92e": {
+      "type": "section-text-row",
+      "blocks": {
+        "bfb11ad1-6452-43f4-ad7a-538180e0127a": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "5 Stars on TrustPilot",
+            "heading_size": 5,
+            "text": "<p>Over 1500 5 Stars on <a href=\"https://www.trustpilot.com/review/balticbeauty.co.uk\" target=\"_blank\" title=\"https://www.trustpilot.com/review/balticbeauty.co.uk\">TrustPilot,</a> Google, Etsy and Amazon. Shop with confidence.</p>",
+            "text_size": 3
+          }
+        },
+        "2aadded9-411d-4c63-b407-ae230bb5a487": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "Fast Delivery",
+            "heading_size": 5,
+            "text": "<p>Next day delivery available, and same day dispatch before 2pm.</p>",
+            "text_size": 3
+          }
+        },
+        "70572bbf-8db5-4b6a-97e0-84218a240788": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "1 Year Warranty",
+            "heading_size": 5,
+            "text": "<p>Whether you want your ring resized or jewellery cleaned, we'll repair and refresh it free of charge.</p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "bfb11ad1-6452-43f4-ad7a-538180e0127a",
+        "2aadded9-411d-4c63-b407-ae230bb5a487",
+        "70572bbf-8db5-4b6a-97e0-84218a240788"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "layout_mobile": "grid"
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "6dc11fc6-7853-4170-bfe0-e89db5936951": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Bought together",
+            "limit": 6
+          }
+        },
+        "db0cf21a-2a2f-48fd-b7a7-fed8f59c013b": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 6
+          }
+        }
+      },
+      "block_order": [
+        "6dc11fc6-7853-4170-bfe0-e89db5936951",
+        "db0cf21a-2a2f-48fd-b7a7-fed8f59c013b"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "bg_color": "#fdfdfd",
+        "color": "",
+        "border_color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "settings": {
+        "enable_product_reviews": false,
+        "enable_accordion": true,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e9ae3c27-41b3-43e1-872e-4dc7004defde",
+    "16883234798ca85e86",
+    "imgtxt",
+    "custom",
+    "1647116645b4b2a92e",
+    "related",
+    "reviews"
+  ]
+}
