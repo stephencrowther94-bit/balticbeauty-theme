@@ -96,11 +96,13 @@
   </div>
 
   {% comment %} Shop pay split payment terms {% endcomment %}
-  <div class="shop-pay-terms">
-    {%- assign product_form_installment_id = 'product-form-installment-' | append: unique | append: '-' | append: product.id -%}
-    {%- form 'product', product, id: product_form_installment_id, class: 'installment', data-product-form-installment: '' -%}
-      <input type="hidden" name="id" value="{{ current_variant.id }}">
-      {{ form | payment_terms }}
-    {%- endform -%}
-  </div>
+  {%- if block.settings.show_installments -%}
+    <div class="shop-pay-terms">
+      {%- assign product_form_installment_id = 'product-form-installment-' | append: unique | append: '-' | append: product.id -%}
+      {%- form 'product', product, id: product_form_installment_id, class: 'installment', data-product-form-installment: '' -%}
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        {{ form | payment_terms }}
+      {%- endform -%}
+    </div>
+  {%- endif -%}
 </div>
