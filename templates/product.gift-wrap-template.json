@@ -1,1 +1,148 @@
-{"sections":{"main":{"type":"product","blocks":{"7040060e-9434-4489-a1e5-ca0c012ce883":{"type":"title","settings":{"subheading_option":"none","show_rating":true,"enable_star_rating":true,"show_rating_count":false,"padding_bottom":8}},"1b2a63ca-6ff5-493a-8243-d4c128cddf71":{"type":"price","settings":{"padding_bottom":16}},"7b54780b-2e9b-4174-ae93-4d35a1294213":{"type":"variants","settings":{"info_page":"","subscriptions_enable_selectors":false,"padding_bottom":16}},"e1a99e5b-4f3f-4826-af32-f86e46b91272":{"type":"shopify:\/\/apps\/textbox-by-textify\/blocks\/app-block\/b5626f69-87af-4a23-ada4-1674452f85d0","settings":{"featured_product":"{{product}}"}},"b644ba7b-c496-46bc-8941-f4b70bb45722":{"type":"buttons","settings":{"show_quantity":false,"show_payment_button":false,"show_gift_card_recipient":false,"padding_bottom":32}},"tabs":{"type":"tab_richtext","settings":{"show_read_more":true,"style":"accordions","title_1":"Luxury Gift Wrap","raw_content_1":"<p>All of our jewellery is polished and boxed in our beautiful signature jewellery boxes as standard.<\/p><p><strong>Luxury Gift Wrap available. Includes:<\/strong><em> <\/em>Signature BB Wrapping Paper, Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<br\/><br\/><strong>Luxury Gift Bag available. Includes:<\/strong> Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<\/p><p>Gift note only available with gift wrap and bag. Just leave us a note in the cart with your message.<\/p>","title_2":"Delivery & Returns","raw_content_2":"<p>All orders come boxed in our beautiful branded Jewellery Boxes and shipped via Royal Mail.<br\/><\/p><p><em>Standard UK: 2-3 working days <\/em><\/p><p><em>Tracked24: 1-2 working days <\/em><\/p><p><em>Next Day Delivery (order by 1pm)<\/em><\/p><p><\/p><p><strong>International Orders<\/strong><\/p><p><em>Standard Tracked: 5-12 Working Days<\/em><\/p><p><em>Express International Shipping also available.<\/em><\/p>","title_3":"","raw_content_3":"","title_4":"","raw_content_4":"","title_5":"","raw_content_5":"","padding_bottom":0}},"c8fb7395-6840-4b66-9d06-252528fd2b1d":{"type":"sharing","settings":{"padding_bottom":16}}},"block_order":["7040060e-9434-4489-a1e5-ca0c012ce883","1b2a63ca-6ff5-493a-8243-d4c128cddf71","7b54780b-2e9b-4174-ae93-4d35a1294213","e1a99e5b-4f3f-4826-af32-f86e46b91272","b644ba7b-c496-46bc-8941-f4b70bb45722","tabs","c8fb7395-6840-4b66-9d06-252528fd2b1d"],"settings":{"product_sticky_enable":true,"image_layout":"stacked","image_size":"normal","show_cart_bar":true,"enable_zoom":false,"enable_video_looping":false,"mobile_image_style":"thumbs","padding_top":23,"padding_bottom":60}},"related":{"type":"related","blocks":{"6dc11fc6-7853-4170-bfe0-e89db5936951":{"type":"related","settings":{"product_recommendations_heading":"Get the look","limit":6}},"db0cf21a-2a2f-48fd-b7a7-fed8f59c013b":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":6}}},"block_order":["6dc11fc6-7853-4170-bfe0-e89db5936951","db0cf21a-2a2f-48fd-b7a7-fed8f59c013b"],"settings":{"enable_tabs":true,"bg_color":"#fdfdfd","color":"","border_color":"","padding_top":60,"padding_bottom":60}},"reviews":{"type":"reviews","settings":{"enable_product_reviews":false,"enable_accordion":true,"width":"wrapper","padding_top":0,"padding_bottom":30}}},"order":["main","related","reviews"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "7040060e-9434-4489-a1e5-ca0c012ce883": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "show_rating": true,
+            "enable_star_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 8
+          }
+        },
+        "1b2a63ca-6ff5-493a-8243-d4c128cddf71": {
+          "type": "price",
+          "settings": {
+            "show_installments": false,
+            "padding_bottom": 16
+          }
+        },
+        "7b54780b-2e9b-4174-ae93-4d35a1294213": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 16
+          }
+        },
+        "e1a99e5b-4f3f-4826-af32-f86e46b91272": {
+          "type": "shopify://apps/textbox-by-textify/blocks/app-block/b5626f69-87af-4a23-ada4-1674452f85d0",
+          "settings": {
+            "featured_product": "{{product}}"
+          }
+        },
+        "b644ba7b-c496-46bc-8941-f4b70bb45722": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": true,
+            "style": "accordions",
+            "title_1": "Luxury Gift Wrap",
+            "raw_content_1": "<p>All of our jewellery is polished and boxed in our beautiful signature jewellery boxes as standard.</p><p><strong>Luxury Gift Wrap available. Includes:</strong><em> </em>Signature BB Wrapping Paper, Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<br/><br/><strong>Luxury Gift Bag available. Includes:</strong> Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.</p><p>Gift note only available with gift wrap and bag. Just leave us a note in the cart with your message.</p>",
+            "title_2": "Delivery & Returns",
+            "raw_content_2": "<p>All orders come boxed in our beautiful branded Jewellery Boxes and shipped via Royal Mail.<br/></p><p><em>Standard UK: 2-3 working days </em></p><p><em>Tracked24: 1-2 working days </em></p><p><em>Next Day Delivery (order by 1pm)</em></p><p></p><p><strong>International Orders</strong></p><p><em>Standard Tracked: 5-12 Working Days</em></p><p><em>Express International Shipping also available.</em></p>",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 0
+          }
+        },
+        "c8fb7395-6840-4b66-9d06-252528fd2b1d": {
+          "type": "sharing",
+          "settings": {
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "7040060e-9434-4489-a1e5-ca0c012ce883",
+        "1b2a63ca-6ff5-493a-8243-d4c128cddf71",
+        "7b54780b-2e9b-4174-ae93-4d35a1294213",
+        "e1a99e5b-4f3f-4826-af32-f86e46b91272",
+        "b644ba7b-c496-46bc-8941-f4b70bb45722",
+        "tabs",
+        "c8fb7395-6840-4b66-9d06-252528fd2b1d"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "stacked",
+        "image_size": "normal",
+        "show_cart_bar": true,
+        "enable_zoom": false,
+        "enable_video_looping": false,
+        "mobile_image_style": "thumbs",
+        "padding_top": 23,
+        "padding_bottom": 60
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "6dc11fc6-7853-4170-bfe0-e89db5936951": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Get the look",
+            "limit": 6
+          }
+        },
+        "db0cf21a-2a2f-48fd-b7a7-fed8f59c013b": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 6
+          }
+        }
+      },
+      "block_order": [
+        "6dc11fc6-7853-4170-bfe0-e89db5936951",
+        "db0cf21a-2a2f-48fd-b7a7-fed8f59c013b"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "bg_color": "#fdfdfd",
+        "color": "",
+        "border_color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "settings": {
+        "enable_product_reviews": false,
+        "enable_accordion": true,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "reviews"
+  ]
+}
