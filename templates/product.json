@@ -40,6 +40,7 @@
         "1b2a63ca-6ff5-493a-8243-d4c128cddf71": {
           "type": "price",
           "settings": {
+            "show_installments": false,
             "padding_bottom": 8
           }
         },
