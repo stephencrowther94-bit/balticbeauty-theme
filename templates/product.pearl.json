@@ -1,1 +1,604 @@
-{"sections":{"main":{"type":"product","blocks":{"83549ae0-6866-4bb5-84a0-11d2f07ae9e3":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"contentSize":14,"pattern":"","hideText":false,"alignment":"left","layout":"","textColor":"","starColor":"","showAllReviews":true,"looxOpenFloatingWidget":false,"emptyRatingWidget":false}},"7040060e-9434-4489-a1e5-ca0c012ce883":{"type":"title","settings":{"subheading_option":"none","show_rating":false,"enable_star_rating":true,"show_rating_count":false,"padding_bottom":8}},"1b2a63ca-6ff5-493a-8243-d4c128cddf71":{"type":"price","settings":{"padding_bottom":8}},"aae0843e-d720-431c-b296-a783b0a94127":{"type":"inventory_countdown","settings":{"show_notice":"always","max_inventory":5,"hide_inventory_counter":false,"padding_bottom":16}},"92c025b3-c841-4c51-9c5c-52f7c66339ef":{"type":"divider","settings":{"show_line":true,"padding_top":20,"padding_bottom":0}},"7b54780b-2e9b-4174-ae93-4d35a1294213":{"type":"variants","settings":{"info_page":"","subscriptions_enable_selectors":false,"padding_bottom":0}},"658277c4-bda9-4330-8b0c-778235d50856":{"type":"shopify:\/\/apps\/textbox-by-textify\/blocks\/app-block\/b5626f69-87af-4a23-ada4-1674452f85d0","settings":{"featured_product":"{{product}}"}},"b644ba7b-c496-46bc-8941-f4b70bb45722":{"type":"buttons","settings":{"show_quantity":false,"show_payment_button":true,"show_gift_card_recipient":false,"padding_bottom":16}},"c68d0add-9d83-4bd7-aaee-0b2e2f328609":{"type":"shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e","settings":{"data_key":"credit-promotion-auto-size","theme":"light","topPadding":"0","bottomPadding":"10","messagePrefix":""}},"delivery_date_FCbP8K":{"type":"delivery_date","settings":{"cutoff_hour":13,"uk_min_days":1,"uk_max_days":2,"eu_min_days":3,"eu_max_days":5,"row_min_days":5,"row_max_days":10,"blocked_dates":"","accent_color":"#4a8c3f","padding_bottom":16}},"f0a70208-a7bf-4843-903c-481a6167bb90":{"type":"divider","settings":{"show_line":true,"padding_top":10,"padding_bottom":10}},"ef775f17-db0c-42e2-aebc-46a46f5218dd":{"type":"icon","settings":{"icon_name":"icon-star","icon_size":20,"icon_color":"#545454","title":"Vermeil Gold Plated 925 Sterling Silver","width":"full","padding_bottom":16}},"9c0a15b6-1679-4384-8f7b-e7adb55de6d1":{"type":"icon","settings":{"icon_name":"icon-heart","icon_size":20,"icon_color":"#545454","title":"Designed in the UK","width":"full","padding_bottom":16}},"cdad6885-1d6a-4d07-a67a-abadef4916cf":{"type":"icon","settings":{"icon_name":"icon-fast-shipment","icon_size":20,"icon_color":"#545454","title":"Shipped Worldwide","width":"full","padding_bottom":16}},"76730138-9e39-4d32-b7e3-9a95c35adff5":{"type":"icon","settings":{"icon_name":"icon-shield","icon_size":20,"icon_color":"#545454","title":"1 Year Warranty","width":"full","padding_bottom":20}},"tabs":{"type":"tab_richtext","settings":{"show_read_more":true,"style":"accordions","title_1":"Luxury Gift Wrap","raw_content_1":"<p>All of our jewellery is polished and boxed in our beautiful signature jewellery boxes as standard.<\/p><p><strong>Luxury Gift Wrap available. Includes:<\/strong><em> <\/em>Signature BB Wrapping Paper, Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<br\/><br\/><strong>Luxury Gift Bag available. Includes:<\/strong> Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<\/p><p>Gift note only available with gift wrap and bag. Just leave us a note in the cart with your message.<\/p>","title_2":"Responsibly Handcrafted","raw_content_2":"<p>We work with a number of family-run International Amber Association recommended workshops across Poland that are home to the talented artisans that handcraft each and every element of our pieces.<\/p>","title_3":"Delivery & Returns","raw_content_3":"<h6><strong>UK Royal Mail <\/strong><\/h6><p>48 Tracked: 2 working days | £2.95<br\/>24 Tracked: 1 working day | £3.95<br\/>Next Day Delivery Guaranteed (order by 2pm) | £6.50<\/p><h6><strong>Europe (Free delivery over £150)<\/strong><\/h6><p>Standard Tracked: 3-7 Working Days | £5.95<br\/>Express Europe Shipping available<\/p><h6><strong>International Orders (Free over £150)<\/strong><\/h6><p>Standard Tracked: 5-12 Working Days | £7.50<br\/>Express International Shipping available<\/p>","title_4":"","raw_content_4":"","title_5":"","raw_content_5":"","padding_bottom":20}},"97d4be5e-8ca5-45d8-b6a8-61055e3bea7f":{"type":"complementary-products","settings":{"bg_color":"","padding_bottom":0}},"8d21144c-f522-4772-b1f3-60c60e708537":{"type":"code","settings":{"code":"<body><klarna-placement\n    data-key=\"credit-promotion-auto-size\"\n    data-locale=\"en-GB”\n    data-purchase-amount=\"12000\"\n><\/klarna-placement><\/body>","padding_bottom":0}},"c2a7ec55-a9e9-4562-8589-aa132f7237fe":{"type":"features","disabled":true,"settings":{"icon_name":"icon-chat","icon_size":20,"title":"Need some help?","text":"<p><a href=\"https:\/\/broadcast-clean.myshopify.com\/pages\/contact\" title=\"Contact\">Chat with us<\/a><\/p>","bg_color":"#f7f9fa","color":"#212121","padding_bottom":16}},"0c905676-2712-4fa7-a7cf-47130f1a62e5":{"type":"code","settings":{"code":"<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}\/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}\/cart\/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n<\/script>","padding_bottom":0}}},"block_order":["83549ae0-6866-4bb5-84a0-11d2f07ae9e3","7040060e-9434-4489-a1e5-ca0c012ce883","1b2a63ca-6ff5-493a-8243-d4c128cddf71","aae0843e-d720-431c-b296-a783b0a94127","92c025b3-c841-4c51-9c5c-52f7c66339ef","7b54780b-2e9b-4174-ae93-4d35a1294213","658277c4-bda9-4330-8b0c-778235d50856","b644ba7b-c496-46bc-8941-f4b70bb45722","c68d0add-9d83-4bd7-aaee-0b2e2f328609","delivery_date_FCbP8K","f0a70208-a7bf-4843-903c-481a6167bb90","ef775f17-db0c-42e2-aebc-46a46f5218dd","9c0a15b6-1679-4384-8f7b-e7adb55de6d1","cdad6885-1d6a-4d07-a67a-abadef4916cf","76730138-9e39-4d32-b7e3-9a95c35adff5","tabs","97d4be5e-8ca5-45d8-b6a8-61055e3bea7f","8d21144c-f522-4772-b1f3-60c60e708537","c2a7ec55-a9e9-4562-8589-aa132f7237fe","0c905676-2712-4fa7-a7cf-47130f1a62e5"],"settings":{"product_sticky_enable":true,"image_layout":"stacked","image_size":"normal","show_cart_bar":true,"enable_zoom":true,"enable_video_looping":true,"mobile_image_style":"thumbs","padding_top":24,"padding_bottom":48}},"loox-product-reviews-app-section":{"type":"apps","blocks":{"loox-product-reviews":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"reviews_to_display":"","default_tab":"automatic","only_photos":false,"aggregated":true,"limit":5,"hide_thumbnails":false,"maxwidth":1080,"is_sample":true}}},"block_order":["loox-product-reviews"],"custom_css":[],"settings":{"include_margins":true}},"imgtxt":{"type":"section-custom-content","blocks":{"imgtxt-0":{"type":"text","settings":{"subheading":"","subheading_size":3,"title":"Vermeil Gold Plated","heading_size":7,"text":"<p>Not to be confused with standard gold plating, our vermeil consists of a substantial layer of 18k\/24k solid gold on sterling silver, ensuring its longevity. You can enjoy the appearance and tactile sensation of gold jewellery at a significantly reduced cost.<\/p>","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--text","show_arrow":false,"show_social_links":false,"text_columns":1,"align_text":"text-left","bg_color":"#f2f2f2","color":""}},"imgtxt-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/baltic-beauty-pearl.jpg","overlay_opacity":5,"overlay_color":"#000000","show_overlay_text":false,"title":"","heading_size":7,"description":"","text_size":3,"flex_align":"align--middle-center","bg_color":"","color":"#ffffff","link_text":"","link":"","button_type":"btn--primary","button_size":"","button_style":"hero__btn btn btn--large btn--outline caps","show_arrow":false}}},"block_order":["imgtxt-0","imgtxt-1"],"settings":{"height":"screen-height-one-half","mobile_height":"screen-height-one-half--mobile","width":"wrapper--full","borders":false,"reverse_blocks":false,"padding_top":0,"padding_bottom":0}},"1647116645b4b2a92e":{"type":"section-text-row","blocks":{"bfb11ad1-6452-43f4-ad7a-538180e0127a":{"type":"icon","settings":{"icon_name":"icon-star","icon_size":25,"icon_color":"#545454","title":"5 Stars on TrustPilot","heading_size":5,"text":"<p>Over 1500 5 Stars on <a href=\"https:\/\/www.trustpilot.com\/review\/balticbeauty.co.uk\" target=\"_blank\" title=\"https:\/\/www.trustpilot.com\/review\/balticbeauty.co.uk\">TrustPilot,<\/a> Google, Etsy and Amazon. Shop with confidence.<\/p>","text_size":3}},"2aadded9-411d-4c63-b407-ae230bb5a487":{"type":"icon","settings":{"icon_name":"icon-truck","icon_size":25,"icon_color":"#545454","title":"Fast Delivery","heading_size":5,"text":"<p>Next day delivery available, and same day dispatch before 2pm.<\/p>","text_size":3}},"70572bbf-8db5-4b6a-97e0-84218a240788":{"type":"icon","settings":{"icon_name":"icon-heart","icon_size":25,"icon_color":"#545454","title":"1 Year Warranty","heading_size":5,"text":"<p>Whether you want your ring resized or jewellery cleaned, we'll repair and refresh it free of charge.<\/p>","text_size":3}}},"block_order":["bfb11ad1-6452-43f4-ad7a-538180e0127a","2aadded9-411d-4c63-b407-ae230bb5a487","70572bbf-8db5-4b6a-97e0-84218a240788"],"settings":{"title":"","heading_size":5,"align_text":"text-left","icon_alignment":"icon--top","align_columns":"flex-align-top","width":"wrapper--full-padded","bg_color":"#f7f7f7","color":"","padding_top":60,"padding_bottom":60,"layout_mobile":"grid"}},"8524d023-e880-4978-8ada-d0a91ca7383b":{"type":"section-columns","blocks":{"defe45ae-aa7a-4759-9e07-9ca66de8a369":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/60938205_129509571572572_1186711024114994737_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/29417755_1778214092294381_7147729804303794176_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/26869901_2092596697675624_399142383242969088_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/109290585_118741446331412_7804328133207791718_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"fe861b67-bb15-4807-8a36-810eaad31685":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/123541200_1016316425517370_4244662881988184215_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"e272a1f1-8e3c-440f-ab77-39d65d2aeaad":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/108578888_2393468074286980_372767710303181795_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"004ac361-efe4-4b8b-8fe4-9a4690ebb6b7":{"type":"image","settings":{"title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}},"48db768c-b1b8-478f-b749-050ba35ac0a5":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/119162665_729931617738291_2135094231584887010_n.jpg","title":"","heading_size":4,"text":"","text_size":3,"button_text":"","button_url":"","button_type":"btn--primary","button_size":"","button_style":"btn--solid","show_arrow":false}}},"block_order":["defe45ae-aa7a-4759-9e07-9ca66de8a369","template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-1","template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-0","template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-2","fe861b67-bb15-4807-8a36-810eaad31685","e272a1f1-8e3c-440f-ab77-39d65d2aeaad","004ac361-efe4-4b8b-8fe4-9a4690ebb6b7","48db768c-b1b8-478f-b749-050ba35ac0a5"],"settings":{"title":"@balticbeautyjewellery","heading_size":7,"align_text":"text-left","align_columns":"flex-align-top","width":"wrapper","image_aspect_ratio":1.2,"mobile_image_aspect_ratio":1.2,"bg_color":"","color":"","padding_top":60,"padding_bottom":0,"layout_mobile":"carousel"}},"related":{"type":"related","blocks":{"6dc11fc6-7853-4170-bfe0-e89db5936951":{"type":"related","settings":{"product_recommendations_heading":"Bought together","limit":6}},"db0cf21a-2a2f-48fd-b7a7-fed8f59c013b":{"type":"recent","settings":{"product_recently_heading":"Recently viewed","product_recently_limit":6}}},"block_order":["6dc11fc6-7853-4170-bfe0-e89db5936951","db0cf21a-2a2f-48fd-b7a7-fed8f59c013b"],"settings":{"enable_tabs":true,"bg_color":"#fdfdfd","color":"","border_color":"","padding_top":60,"padding_bottom":60}},"reviews":{"type":"reviews","settings":{"enable_product_reviews":false,"enable_accordion":true,"width":"wrapper","padding_top":0,"padding_bottom":30}}},"order":["main","loox-product-reviews-app-section","imgtxt","1647116645b4b2a92e","8524d023-e880-4978-8ada-d0a91ca7383b","related","reviews"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "83549ae0-6866-4bb5-84a0-11d2f07ae9e3": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 14,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "left",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": true,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "7040060e-9434-4489-a1e5-ca0c012ce883": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "show_rating": false,
+            "enable_star_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 8
+          }
+        },
+        "1b2a63ca-6ff5-493a-8243-d4c128cddf71": {
+          "type": "price",
+          "settings": {
+            "show_installments": false,
+            "padding_bottom": 8
+          }
+        },
+        "aae0843e-d720-431c-b296-a783b0a94127": {
+          "type": "inventory_countdown",
+          "settings": {
+            "show_notice": "always",
+            "max_inventory": 5,
+            "hide_inventory_counter": false,
+            "padding_bottom": 16
+          }
+        },
+        "92c025b3-c841-4c51-9c5c-52f7c66339ef": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 20,
+            "padding_bottom": 0
+          }
+        },
+        "7b54780b-2e9b-4174-ae93-4d35a1294213": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "subscriptions_enable_selectors": false,
+            "padding_bottom": 0
+          }
+        },
+        "658277c4-bda9-4330-8b0c-778235d50856": {
+          "type": "shopify://apps/textbox-by-textify/blocks/app-block/b5626f69-87af-4a23-ada4-1674452f85d0",
+          "settings": {
+            "featured_product": "{{product}}"
+          }
+        },
+        "b644ba7b-c496-46bc-8941-f4b70bb45722": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "show_payment_button": true,
+            "show_gift_card_recipient": false,
+            "padding_bottom": 16
+          }
+        },
+        "c68d0add-9d83-4bd7-aaee-0b2e2f328609": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-auto-size",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "10",
+            "messagePrefix": ""
+          }
+        },
+        "delivery_date_FCbP8K": {
+          "type": "delivery_date",
+          "settings": {
+            "cutoff_hour": 13,
+            "uk_min_days": 1,
+            "uk_max_days": 2,
+            "eu_min_days": 3,
+            "eu_max_days": 5,
+            "row_min_days": 5,
+            "row_max_days": 10,
+            "blocked_dates": "",
+            "accent_color": "#4a8c3f",
+            "padding_bottom": 16
+          }
+        },
+        "f0a70208-a7bf-4843-903c-481a6167bb90": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_top": 10,
+            "padding_bottom": 10
+          }
+        },
+        "ef775f17-db0c-42e2-aebc-46a46f5218dd": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Vermeil Gold Plated 925 Sterling Silver",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "9c0a15b6-1679-4384-8f7b-e7adb55de6d1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Designed in the UK",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "cdad6885-1d6a-4d07-a67a-abadef4916cf": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-fast-shipment",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "Shipped Worldwide",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "76730138-9e39-4d32-b7e3-9a95c35adff5": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#545454",
+            "title": "1 Year Warranty",
+            "width": "full",
+            "padding_bottom": 20
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": true,
+            "style": "accordions",
+            "title_1": "Luxury Gift Wrap",
+            "raw_content_1": "<p>All of our jewellery is polished and boxed in our beautiful signature jewellery boxes as standard.</p><p><strong>Luxury Gift Wrap available. Includes:</strong><em> </em>Signature BB Wrapping Paper, Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.<br/><br/><strong>Luxury Gift Bag available. Includes:</strong> Satin Ribbon, Sterling Silver Anti-Tarnish Cleaning Cloth & Note Card.</p><p>Gift note only available with gift wrap and bag. Just leave us a note in the cart with your message.</p>",
+            "title_2": "Responsibly Handcrafted",
+            "raw_content_2": "<p>We work with a number of family-run International Amber Association recommended workshops across Poland that are home to the talented artisans that handcraft each and every element of our pieces.</p>",
+            "title_3": "Delivery & Returns",
+            "raw_content_3": "<h6><strong>UK Royal Mail </strong></h6><p>48 Tracked: 2 working days | £2.95<br/>24 Tracked: 1 working day | £3.95<br/>Next Day Delivery Guaranteed (order by 2pm) | £6.50</p><h6><strong>Europe (Free delivery over £150)</strong></h6><p>Standard Tracked: 3-7 Working Days | £5.95<br/>Express Europe Shipping available</p><h6><strong>International Orders (Free over £150)</strong></h6><p>Standard Tracked: 5-12 Working Days | £7.50<br/>Express International Shipping available</p>",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "97d4be5e-8ca5-45d8-b6a8-61055e3bea7f": {
+          "type": "complementary-products",
+          "settings": {
+            "bg_color": "",
+            "padding_bottom": 0
+          }
+        },
+        "8d21144c-f522-4772-b1f3-60c60e708537": {
+          "type": "code",
+          "settings": {
+            "code": "<body><klarna-placement\n    data-key=\"credit-promotion-auto-size\"\n    data-locale=\"en-GB”\n    data-purchase-amount=\"12000\"\n></klarna-placement></body>",
+            "padding_bottom": 0
+          }
+        },
+        "c2a7ec55-a9e9-4562-8589-aa132f7237fe": {
+          "type": "features",
+          "disabled": true,
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "title": "Need some help?",
+            "text": "<p><a href=\"https://broadcast-clean.myshopify.com/pages/contact\" title=\"Contact\">Chat with us</a></p>",
+            "bg_color": "#f7f9fa",
+            "color": "#212121",
+            "padding_bottom": 16
+          }
+        },
+        "0c905676-2712-4fa7-a7cf-47130f1a62e5": {
+          "type": "code",
+          "settings": {
+            "code": "<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}/cart/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='/cart/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n</script>",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "83549ae0-6866-4bb5-84a0-11d2f07ae9e3",
+        "7040060e-9434-4489-a1e5-ca0c012ce883",
+        "1b2a63ca-6ff5-493a-8243-d4c128cddf71",
+        "aae0843e-d720-431c-b296-a783b0a94127",
+        "92c025b3-c841-4c51-9c5c-52f7c66339ef",
+        "7b54780b-2e9b-4174-ae93-4d35a1294213",
+        "658277c4-bda9-4330-8b0c-778235d50856",
+        "b644ba7b-c496-46bc-8941-f4b70bb45722",
+        "c68d0add-9d83-4bd7-aaee-0b2e2f328609",
+        "delivery_date_FCbP8K",
+        "f0a70208-a7bf-4843-903c-481a6167bb90",
+        "ef775f17-db0c-42e2-aebc-46a46f5218dd",
+        "9c0a15b6-1679-4384-8f7b-e7adb55de6d1",
+        "cdad6885-1d6a-4d07-a67a-abadef4916cf",
+        "76730138-9e39-4d32-b7e3-9a95c35adff5",
+        "tabs",
+        "97d4be5e-8ca5-45d8-b6a8-61055e3bea7f",
+        "8d21144c-f522-4772-b1f3-60c60e708537",
+        "c2a7ec55-a9e9-4562-8589-aa132f7237fe",
+        "0c905676-2712-4fa7-a7cf-47130f1a62e5"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "stacked",
+        "image_size": "normal",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_style": "thumbs",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 5,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "custom_css": [],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "imgtxt": {
+      "type": "section-custom-content",
+      "blocks": {
+        "imgtxt-0": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "subheading_size": 3,
+            "title": "Vermeil Gold Plated",
+            "heading_size": 7,
+            "text": "<p>Not to be confused with standard gold plating, our vermeil consists of a substantial layer of 18k/24k solid gold on sterling silver, ensuring its longevity. You can enjoy the appearance and tactile sensation of gold jewellery at a significantly reduced cost.</p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#f2f2f2",
+            "color": ""
+          }
+        },
+        "imgtxt-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/baltic-beauty-pearl.jpg",
+            "overlay_opacity": 5,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "hero__btn btn btn--large btn--outline caps",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "imgtxt-0",
+        "imgtxt-1"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full",
+        "borders": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1647116645b4b2a92e": {
+      "type": "section-text-row",
+      "blocks": {
+        "bfb11ad1-6452-43f4-ad7a-538180e0127a": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "5 Stars on TrustPilot",
+            "heading_size": 5,
+            "text": "<p>Over 1500 5 Stars on <a href=\"https://www.trustpilot.com/review/balticbeauty.co.uk\" target=\"_blank\" title=\"https://www.trustpilot.com/review/balticbeauty.co.uk\">TrustPilot,</a> Google, Etsy and Amazon. Shop with confidence.</p>",
+            "text_size": 3
+          }
+        },
+        "2aadded9-411d-4c63-b407-ae230bb5a487": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-truck",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "Fast Delivery",
+            "heading_size": 5,
+            "text": "<p>Next day delivery available, and same day dispatch before 2pm.</p>",
+            "text_size": 3
+          }
+        },
+        "70572bbf-8db5-4b6a-97e0-84218a240788": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 25,
+            "icon_color": "#545454",
+            "title": "1 Year Warranty",
+            "heading_size": 5,
+            "text": "<p>Whether you want your ring resized or jewellery cleaned, we'll repair and refresh it free of charge.</p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "bfb11ad1-6452-43f4-ad7a-538180e0127a",
+        "2aadded9-411d-4c63-b407-ae230bb5a487",
+        "70572bbf-8db5-4b6a-97e0-84218a240788"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "align_text": "text-left",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f7f7",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "layout_mobile": "grid"
+      }
+    },
+    "8524d023-e880-4978-8ada-d0a91ca7383b": {
+      "type": "section-columns",
+      "blocks": {
+        "defe45ae-aa7a-4759-9e07-9ca66de8a369": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/60938205_129509571572572_1186711024114994737_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/29417755_1778214092294381_7147729804303794176_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/26869901_2092596697675624_399142383242969088_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/109290585_118741446331412_7804328133207791718_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "fe861b67-bb15-4807-8a36-810eaad31685": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/123541200_1016316425517370_4244662881988184215_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "e272a1f1-8e3c-440f-ab77-39d65d2aeaad": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/108578888_2393468074286980_372767710303181795_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "004ac361-efe4-4b8b-8fe4-9a4690ebb6b7": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "48db768c-b1b8-478f-b749-050ba35ac0a5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/119162665_729931617738291_2135094231584887010_n.jpg",
+            "title": "",
+            "heading_size": 4,
+            "text": "",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "defe45ae-aa7a-4759-9e07-9ca66de8a369",
+        "template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-1",
+        "template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-0",
+        "template--16826311934190__8524d023-e880-4978-8ada-d0a91ca7383b-168842100731dc3606-2",
+        "fe861b67-bb15-4807-8a36-810eaad31685",
+        "e272a1f1-8e3c-440f-ab77-39d65d2aeaad",
+        "004ac361-efe4-4b8b-8fe4-9a4690ebb6b7",
+        "48db768c-b1b8-478f-b749-050ba35ac0a5"
+      ],
+      "settings": {
+        "title": "@balticbeautyjewellery",
+        "heading_size": 7,
+        "align_text": "text-left",
+        "align_columns": "flex-align-top",
+        "width": "wrapper",
+        "image_aspect_ratio": 1.2,
+        "mobile_image_aspect_ratio": 1.2,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "layout_mobile": "carousel"
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "6dc11fc6-7853-4170-bfe0-e89db5936951": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Bought together",
+            "limit": 6
+          }
+        },
+        "db0cf21a-2a2f-48fd-b7a7-fed8f59c013b": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed",
+            "product_recently_limit": 6
+          }
+        }
+      },
+      "block_order": [
+        "6dc11fc6-7853-4170-bfe0-e89db5936951",
+        "db0cf21a-2a2f-48fd-b7a7-fed8f59c013b"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "bg_color": "#fdfdfd",
+        "color": "",
+        "border_color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "settings": {
+        "enable_product_reviews": false,
+        "enable_accordion": true,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "loox-product-reviews-app-section",
+    "imgtxt",
+    "1647116645b4b2a92e",
+    "8524d023-e880-4978-8ada-d0a91ca7383b",
+    "related",
+    "reviews"
+  ]
+}
