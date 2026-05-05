@@ -47,11 +47,11 @@
       "settings": {
         "height": "screen-height-two-thirds",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/Little_Multicolour_Amber_Pendant_06m68_b.jpg",
+        "image_1": "shopify://shop_images/04A3105.jpg",
         "image_2": "shopify://shop_images/productswhite-92.jpg",
         "link": "shopify://collections/shop-everything",
         "mobile_height": "screen-height-two-thirds--mobile",
-        "mobile_image": "shopify://shop_images/Little_Multicolour_Amber_Pendant_06m68_b.jpg",
+        "mobile_image": "shopify://shop_images/04A3105.jpg",
         "flex_align_desktop": "align--bottom-left-desktop",
         "flex_align_mobile": "align--bottom-left-mobile",
         "overlay_opacity": 5,
