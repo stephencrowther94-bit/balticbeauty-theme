@@ -15,23 +15,23 @@
         "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-0": {
           "type": "heading",
           "settings": {
-            "title": "FREE £40 Earrings | Excludes SALE",
+            "title": "FREE £10 GIFT VOUCHER",
             "heading_size": 7
           }
         },
         "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-1": {
           "type": "text",
           "settings": {
-            "description": "ENDS SOON",
-            "text_size": 5,
+            "description": "AUTO-APPLIES AT CHECKOUT | EXCLUDES SALE",
+            "text_size": 4,
             "text_style": "font-body"
           }
         },
         "template--16825504628974__c5b3d93d-350d-4f3d-bac7-cbb095ab3a3f-16880372975fccdad1-2": {
           "type": "button",
           "settings": {
-            "link_text": "SHOP NOW",
-            "link": "shopify://collections/best-sellers",
+            "link_text": "ENJOY £10 OFF",
+            "link": "shopify://collections/shop-everything",
             "button_type": "btn--black",
             "button_size": "",
             "button_style": "btn--solid",
@@ -47,14 +47,14 @@
       "settings": {
         "height": "screen-height-two-thirds",
         "width": "wrapper--full",
-        "image_1": "shopify://shop_images/04A3105.jpg",
-        "image_2": "shopify://shop_images/productswhite-92.jpg",
-        "link": "shopify://collections/best-sellers",
+        "image_1": "shopify://shop_images/5_f7602aa2-96df-4e73-906e-f0ae44f5bcdf.jpg",
+        "image_2": "shopify://shop_images/04A402.jpg",
+        "link": "shopify://collections/shop-everything",
         "mobile_height": "screen-height-two-thirds--mobile",
-        "mobile_image": "shopify://shop_images/04A3105.jpg",
+        "mobile_image": "shopify://shop_images/5_f7602aa2-96df-4e73-906e-f0ae44f5bcdf.jpg",
         "flex_align_desktop": "align--bottom-left-desktop",
         "flex_align_mobile": "align--bottom-left-mobile",
-        "overlay_opacity": 5,
+        "overlay_opacity": 0,
         "overlay_color": "#000000",
         "show_overlay_text": true,
         "bg_color": "",
