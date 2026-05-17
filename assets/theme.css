@@ -15955,7 +15955,7 @@ a.review {
     display: inline;
     padding: 0 3px;
     white-space: normal;
-    font-size: calc(0.75rem * var(--FONT-ADJUST-HEADING));
+    font-size: 12px;
   }
 }
 
